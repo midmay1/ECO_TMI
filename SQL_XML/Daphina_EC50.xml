@@ -1,0 +1,1096 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+	<RECORD>
+		<index>1</index>
+		<Concentration>50600-52300 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem</FI>
+	</RECORD>
+	<RECORD>
+		<index>2</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>3</index>
+		<Concentration>0.15 Al mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 0.22 AI mg/L(intoxication, 48 hours, Ecotox), 0.11 (0.093-0.16)  AI mg/L(intoxication, 48 hours, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>4</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>5</index>
+		<Concentration>(&gt; 0-&lt;500) AI mg/L</Concentration>
+		<Duration>10 days</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>6</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>7</index>
+		<Concentration>4547 AI mg/L</Concentration>
+		<Duration>4.2 days</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>8</index>
+		<Concentration>40,38 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Central Drug House (P) Ltd - Material Safety Data Sheet SDS/MSDS (https://www.cdhfinechemical.com/images/product/msds/101_1948435969_SodiumHydroxide-CASNO-1310-73-2-MSDS.pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>9</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>10</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>11</index>
+		<Concentration>2.3 PPM</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 1.7 PPM (48 hrs, Pubchem), 1.57 PPM (48 hrs, Pubchem), 0.040 PPM (48 hrs, Pubchem), 0.17 PPM (48 hrs, Pubchem), 1.57 (1.27-1.94) AI mg/L (48 hrs, Ecotox), 2.3 (2-2.6) AI mg/L (48 hrs, Ecotox), 1.7 (1.3-2.2) AI mg/L (48 hrs, Ecotox), 0.17 (0.16-0.19) AI mg/L (48 hrs, Ecotox), 0.04 (0.033-0.044) AI mg/L (48 hrs, Ecotox), Total 0.05 AI mg/L (24 hrs, Ecotox), Total 0.02 AI mg/L (48 hrs, Ecotox),  Total 0.01 AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>12</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>13</index>
+		<Concentration>0.421 AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 69600 ug/L (48 hrs, Pubchem), 7.85 (6.86-8.96) AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>14</index>
+		<Concentration>1.472823 (0.9936938-2.454705) AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>15</index>
+		<Concentration>1.5 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>CRC Canada Co. - Safety Data Sheet (http://docs.crcindustries.com/msds/75391E.pdf), 7550-13299 mg/L (48 hrs, CRC Canada Co. - Safety Data Sheet (http://docs.crcindustries.com/msds/75391E.pdf)), 1.5 mg/L (48 hrs, CRC Canada Co. - Safety Data Sheet (http://docs.crcindustries.com/msds/75391E.pdf)), 1.5 mg/L (48 hrs, CRC Canada Co. - Safety Data Sheet (http://docs.crcindustries.com/msds/75391E.pdf))</FI>
+	</RECORD>
+	<RECORD>
+		<index>16</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>17</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>18</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>19</index>
+		<Concentration>82.5 mg/L</Concentration>
+		<Duration>96 hrs</Duration>
+		<FI>Pubchem</FI>
+	</RECORD>
+	<RECORD>
+		<index>20</index>
+		<Concentration>19.6 AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 11.517625 (5.344149-24.9700755) AI mg/L (48 hrs, Ecotox), 7 AI mg/L (24 hrs, Ecotox), 84 AI mg/L (24 hrs, Ecotox), 3.6 AI mg/L (0.417 days, Ecotox), 8 AI mg/L (24 hrs, Ecotox), 6 AI mg/L (48 hrs, Ecotox), 7 (5.23-9.37) AI mg/L (24 hrs, Ecotox), 6.88 (5.46-9.83) AI mg/L (48 hrs, Ecotox), 6.56 (0-9.83) AI mg/L (48 hrs, Ecotox), 270 AI mg/L (24 hrs, Ecotox), 84 AI mg/L (24 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>21</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>22</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>23</index>
+		<Concentration>7640000 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 10734.077 AI mg/L (24 hrs, Ecotox), 14 (0.8-294) AI mg/L (9-11 days, Ecotox), 26 (1-640) AI mg/L (9-11 days, Ecotox), 15 (0.9-278) AI mg/L (9-11 days, Ecotox), 2.5 AI mg/L (24 hrs, Ecotox), 2 AI mg/L (48 hrs, Ecotox), 13714.7413 AI mg/L (24 hrs, Ecotox), &gt;15800 AI mg/L (24 hrs, Ecotox), 9300 (7700-11200) AI mg/L (48 hrs, Ecotox), &gt;100 AI mg/L (0.0833 days, Ecotox), &gt;100 AI mg/L (0.1667 days, Ecotox), &gt;100 AI mg/L (0.25 days, Ecotox), &gt;100 AI mg/L (24 hrs, Ecotox), &gt;10000 AI mg/L (24 hrs, Ecotox), &gt;100 AI mg/L (48 hrs, Ecotox), 7640 AI mg/L (48 hrs, Ecotox), &gt;10000 AI mg/L (24 hrs, Ecotox), &gt;10000 AI mg/L ( 48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>24</index>
+		<Concentration>610 (570-640) AI mg/L</Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>Ecotox, 1033 AI mg/L (24 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>25</index>
+		<Concentration>140 mg/L</Concentration>
+		<Duration>?</Duration>
+		<FI>echa.europa.eu(https://echa.europa.eu/registration-dossier/-/registered-dossier/15231/6/4/1)</FI>
+	</RECORD>
+	<RECORD>
+		<index>26</index>
+		<Concentration>&gt;110 AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>&gt;1000 AI mg/L (24 hrs, Ecotox), &gt;1000 AI mg/L (48 hrs, Ecotox), &gt;10000 AI mg/L (24 hrs, Ecotox), &gt;1000 AI mg/L (48 hrs Ecotox), &gt;10000 AI mg/L (24 hrs, Ecotox), &gt;10000 AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>27</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>28</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>29</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>30</index>
+		<Concentration>3.09 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>echa.europa.eu(https://echa.europa.eu/bg/registration-dossier/-/registered-dossier/13634/6/2/4)</FI>
+	</RECORD>
+	<RECORD>
+		<index>31</index>
+		<Concentration>211.29 (177.89-255.66) AI mg/L</Concentration>
+		<Duration>21 days</Duration>
+		<FI>Ecotox, 340.97 (281.79-412.57) AI mg/L (21 days, Ecotox), 312.7 (272.89-369.04) AI mg/L (21 days, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>32</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>33</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>34</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>35</index>
+		<Concentration>5.3 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Eternis Fine Chemicals Ltd. - Safety data sheet (http://www.eternis.com/sites/default/files/products/PTBCHA%20Super%20SDS.pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>36</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>37</index>
+		<Concentration>0.44 AI mg/L</Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>38</index>
+		<Concentration>1.6 mg/L</Concentration>
+		<Duration>21 days</Duration>
+		<FI>Pubchem, 10mg/L (24 hrs, Pubchem) 1.5 mg/L (14 days, Pubchem)</FI>
+	</RECORD>
+	<RECORD>
+		<index>39</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>40</index>
+		<Concentration>0.421 AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 7.85 (6.86-8.96) AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>41</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>42</index>
+		<Concentration>22.4 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Vigon Internatinal, Inc. (pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>43</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>44</index>
+		<Concentration>15 AI mg/L</Concentration>
+		<Duration>1 Day(s)</Duration>
+		<FI>Ecotox,
+24 Al mg/L 0.0625 Day(s) (Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>45</index>
+		<Concentration>340700 to 469200 ug/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>PubChem,
+3 datas(24hr, , 64hr,21 days) in PubChem;
+16 datas(1,2,7,8,9,10,21 Days) in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>46</index>
+		<Concentration>Active ingredient
+36.7 (31.9-43) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+ 59 (95% confidence limit: 53-65) mg/L for 48 hr (PubChem)</FI>
+	</RECORD>
+	<RECORD>
+		<index>47</index>
+		<Concentration>29.16 mg/L</Concentration>
+		<Duration>?</Duration>
+		<FI>echa.europa (https://echa.europa.eu/pt/registration-dossier/-/registered-dossier/13572/6/2/1)</FI>
+	</RECORD>
+	<RECORD>
+		<index>48</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>49</index>
+		<Concentration>&gt;0.17 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>echa.europa (https://echa.europa.eu/pt/registration-dossier/-/registered-dossier/20872/6/1)</FI>
+	</RECORD>
+	<RECORD>
+		<index>50</index>
+		<Concentration>1,000 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>THE DOW CHEMICAL COMPANY SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>51</index>
+		<Concentration>87.26 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>MTI Corporation (https://www.mtixtl.com/sds/EQ-Lib-CMC_SDS.pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>52</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>53</index>
+		<Concentration>Formulation
+12 AI mg/L</Concentration>
+		<Duration>1 Day(s)</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>54</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>55</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>56</index>
+		<Concentration>Formulation
+15126.554475 AI mg/L</Concentration>
+		<Duration>7 Day(s)</Duration>
+		<FI>Ecotox,
+10 datas in Ecotox(1, 4, 7 days)</FI>
+	</RECORD>
+	<RECORD>
+		<index>57</index>
+		<Concentration>Formulation
+3200 (2700-3700) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+ 2 datas ( 2 days ) in Ecotox,
+2 datas ( 2days ) in PubChem</FI>
+	</RECORD>
+	<RECORD>
+		<index>58</index>
+		<Concentration>Active ingredient
+2.24 (1.84-2.73) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+8 dats in Ecotox (2 days),
+6 datas 48hrs in PubChem</FI>
+	</RECORD>
+	<RECORD>
+		<index>59</index>
+		<Concentration>&gt;100 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>gbiosciences (https://www.gbiosciences.com/image/pdfs/msds/BTNM-0022_msds.pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>60</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>61</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>62</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>63</index>
+		<Concentration>Higher than
+100mg TOS/L (55.5 mg aep/L)</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>ECHA ;
+Not acutely toxic to Daphnia magna;
+https://www.echa.europa.eu/lt/web/guest/registration-dossier/-/registered-dossier/10278/6/2/4</FI>
+	</RECORD>
+	<RECORD>
+		<index>64</index>
+		<Concentration>~120 mg/L</Concentration>
+		<Duration>72 hrs</Duration>
+		<FI>Alfa laval Safety data sheet ;
+https://www.alfalaval.com/contentassets/60c58d6352c34a8e8625a9bfb1a9ed25/alpacon_descalant_offshore_gb_vers14.pdf</FI>
+	</RECORD>
+	<RECORD>
+		<index>65</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>66</index>
+		<Concentration>0.28 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>ECHA performed as per the OECD guideline;
+1.1 mg/L(ECHA)</FI>
+	</RECORD>
+	<RECORD>
+		<index>67</index>
+		<Concentration>17.48 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>ECHA;
+https://www.echa.europa.eu/lt/web/guest/registration-dossier/-/registered-dossier/14242/6/2/4</FI>
+	</RECORD>
+	<RECORD>
+		<index>68</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>69</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>70</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>71</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>72</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>73</index>
+		<Concentration>234 ug/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>PubChem,
+4 datas in PubChem;
+34 datas (1,2,4,21 days) in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>74</index>
+		<Concentration>4,700 mg/L </Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>PubChem,
+Formulation
+8450 AI mg/L 24hrs (Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>75</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>76</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>77</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>78</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>79</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>80</index>
+		<Concentration>0.39 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>SAFETY DATA SHEET(CLARIANT)</FI>
+	</RECORD>
+	<RECORD>
+		<index>81</index>
+		<Concentration>&gt; 1000 AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox &amp; pubchem, Age : &lt;24 Hour(s), </FI>
+	</RECORD>
+	<RECORD>
+		<index>82</index>
+		<Concentration>2000 mg/L
+(212 mg active enzyme protein/L)</Concentration>
+		<Duration>48hr</Duration>
+		<FI>ECHA ;
+4900 mg/L(519 mg active enzyme protein/L)
+</FI>
+	</RECORD>
+	<RECORD>
+		<index>83</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>84</index>
+		<Concentration>14.8 mg/L
+(nominal; 95% C.L.: 8.4 - 26.2 mg/L)</Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>ECHA.europa</FI>
+	</RECORD>
+	<RECORD>
+		<index>85</index>
+		<Concentration>488.2 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa
+synonym(by pubchem) cas id : 5039-78-1
+(https://www.echa.europa.eu/web/guest/registration-dossier/-/registered-dossier/14101/6/2/4)</FI>
+	</RECORD>
+	<RECORD>
+		<index>86</index>
+		<Concentration>17 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa
+synonym : cis-2-tert-butylcyclohexyl acetate ( cas cis-2-tert-butylcyclohexyl acetate )
+https://www.echa.europa.eu/web/guest/registration-dossier/-/registered-dossier/15008/6/2/1</FI>
+	</RECORD>
+	<RECORD>
+		<index>87</index>
+		<Concentration>320 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa ;
+https://echa.europa.eu/registration-dossier/-/registered-dossier/14480/6/2/4</FI>
+	</RECORD>
+	<RECORD>
+		<index>88</index>
+		<Concentration>151.2 (138-165.6) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox, Larva, Age : &#9;&lt;24 Hour(s), *24hr : 679 AI mg/L *24hr : 68 AI mg/L *</FI>
+	</RECORD>
+	<RECORD>
+		<index>89</index>
+		<Concentration>1.38 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>SAFETY DATA SHEET(IFF);
+https://www.johndwalsh.com/wp-content/uploads/2016/09/ISO-CYCLEMONE-E-GHS-SDS.pdf</FI>
+	</RECORD>
+	<RECORD>
+		<index>90</index>
+		<Concentration>17ppm</Concentration>
+		<Duration>48hr</Duration>
+		<FI>Pubchem, Agel : &lt;24 Hours(s)</FI>
+	</RECORD>
+	<RECORD>
+		<index>91</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>92</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>93</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>94</index>
+		<Concentration>&gt; 100 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa</FI>
+	</RECORD>
+	<RECORD>
+		<index>95</index>
+		<Concentration>&gt; 100 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa</FI>
+	</RECORD>
+	<RECORD>
+		<index>96</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>97</index>
+		<Concentration>0.42 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>SAFETY DATA SHEET(carlroth)</FI>
+	</RECORD>
+	<RECORD>
+		<index>98</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>99</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>100</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>101</index>
+		<Concentration>19.3 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa</FI>
+	</RECORD>
+	<RECORD>
+		<index>102</index>
+		<Concentration>14.2mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA(OECD guideline 202);
+27mg/l (German standard DIN 38412 part L11)</FI>
+	</RECORD>
+	<RECORD>
+		<index>103</index>
+		<Concentration>4.04 AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox ; Age : &lt;24 Hour(s) (Neonate)</FI>
+	</RECORD>
+	<RECORD>
+		<index>104</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>105</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>106</index>
+		<Concentration>1400 (1130-1740) AI mg/L (along duration time)</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox, EC to swimming ; Age : , Total 8 different EC datas (along duration time and effectiveness)</FI>
+	</RECORD>
+	<RECORD>
+		<index>107</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>108</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>109</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>110</index>
+		<Concentration>&gt; 100 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>SAFETY DATA SHEET(BASF);
+https://dispersions-resins-products.basf.us/products/luwipal-066-lf</FI>
+	</RECORD>
+	<RECORD>
+		<index>111</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>112</index>
+		<Concentration>2.23 mg/l</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>SAFETY DATA SHEET(SONAX);
+http://www.servicebest.com/downloadable/1837668_EN.pdf</FI>
+	</RECORD>
+	<RECORD>
+		<index>113</index>
+		<Concentration>381 ug/l
+(95% confidence limits : 321 - 427 ug/L)</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA.europa</FI>
+	</RECORD>
+	<RECORD>
+		<index>114</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>115</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>116</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>117</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>118</index>
+		<Concentration>1.44 AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox ; Age : &lt;24 Hour(s) (Neonate)</FI>
+	</RECORD>
+	<RECORD>
+		<index>119</index>
+		<Concentration>0.4 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>120</index>
+		<Concentration>&gt; 10 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Vigon International, Inc SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>121</index>
+		<Concentration>2.3 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>122</index>
+		<Concentration>0.21 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>123</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>124</index>
+		<Concentration>38 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>125</index>
+		<Concentration>4.7 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>126</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>127</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>128</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>129</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>130</index>
+		<Concentration>18 ug/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>EC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: &gt;1000 ug/L for &lt; or =6 hr; Effect: behavioral changes, general /Bardac 22, 45% AI/
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 560 ug/L for &lt; or =6 hr; Effect: behavioral changes, general
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 180 ug/L for 24 hr; Effect: behavioral changes, general /Bardac 22, 45% AI/
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 180 ug/L for 24 hr; Effect: behavioral changes, general
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 160 ug/L for 48 hr; Effect: behavioral changes, general /Bardac 22, 45% AI/
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 59 ug/L for 48 hr; Effect: behavioral changes, general
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) first instar larvae; Conditions: freshwater, static; Concentration: 100 ug/L for 48 hr (95% confidence interval: 85-117 ug/L); Effect: intoxication, immobilization
+USEPA, Office of Pesticide Programs; Pesticide Ecotoxicity Database (2000) on N-Decyl-N,N&apos;-dimethyl-1-decanaminium chloride (7173-51-5). Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) age &lt;20 hr; Conditions: freshwater, static; Concentration: 18 ug/L for 48 hr (95% confidence interval: 14-22 ug/L); Effect: intoxication, immobilization /100% purity/
+USEPA, Office of Pesticide Programs; Pesticide Ecotoxicity Database (2000) on N-Decyl-N,N&apos;-dimethyl-1-decanaminium chloride (7173-51-5). Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: freshwater, static; Concentration: 94 ug/L for 48 hr (95% confidence interval: 74-120 ug/L); Effect: intoxication, immobilization /41.2% purity/
+USEPA, Office of Pesticide Programs; Pesticide Ecotoxicity Database (2000) on N-Decyl-N,N&apos;-dimethyl-1-decanaminium chloride (7173-51-5). Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm // 8 results from ECOTOX
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water flea) age 12 hr; Conditions: freshwater, static; Concentration: 95 ug/L for 48 hr (95% confidence interval: 78-120 ug/L); Effect: intoxication, immobilization
+USEPA, Office of Pesticide Programs; Pesticide Ecotoxicity Database (2000) on N-Decyl-N,N&apos;-dimethyl-1-decanaminium chloride (7173-51-5). Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)</FI>
+	</RECORD>
+	<RECORD>
+		<index>131</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>132</index>
+		<Concentration>97 ug/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>EC50; Species: Daphnia magna (Water Flea) age &lt;24 hr; Conditions: freshwater, flow through; Concentration: 3700 ug/L for 48 hr (95% confidence interval: 2900-4600 ug/L); Effect: intoxication, immobilization /89.8% purity/ // 6 results from ECOTOX
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water Flea) age 12 hr; Conditions: freshwater, static; Concentration: 1100 ug/L for 48 hr (95% confidence interval: 910-1340 ug/L); Effect: intoxication, immobilization /77.6% purity/
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water Flea) age &lt;24 hr; Conditions: freshwater, static; Concentration: 2000 ug/L for 48 hr (95% confidence interval: 1700-2400 ug/L); Effect: intoxication, immobilization /73.6% purity/
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water Flea) age &lt;24 hr; Conditions: freshwater, static; Concentration: 2240 ug/L for 48 hr (95% confidence interval: 1840-2730 ug/L); Effect: intoxication, immobilization /99.29% purity/
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water Flea) age &lt;24 hr; Conditions: freshwater, static; Concentration: 4400 ug/L for 48 hr (95% confidence interval: 3900-4900 ug/L); Effect: intoxication, immobilization /76.1% purity/
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+EC50; Species: Daphnia magna (Water Flea) age &lt;24 hr; Conditions: freshwater, static; Concentration: 97 ug/L for 48 hr; Effect: intoxication, immobilization /93.2% purity/
+USEPA/Office of Pesticide Programs; Pesticide Ecotoxicity Database (2013) as cited in the ECOTOX database. Available from, as of July 20, 2015: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)</FI>
+	</RECORD>
+	<RECORD>
+		<index>133</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>134</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>135</index>
+		<Concentration>287.17 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>136</index>
+		<Concentration>2.684 (2.084-3.745) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>EC50; Species: Daphnia magna (Water Flea); Conditions: freshwater, renewal; Concentration: 282 ug/L for 21 days (95% confidence interval: 260-312 ug/L); Effect: decreased reproduction
+Balk F, Ford RA; Toxicol Lett 111 (1/2): 81-94 (1999) as cited in the ECOTOX database. Available from, as of July 24, 2018: https://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB) // 2 results from ECOTOX</FI>
+	</RECORD>
+	<RECORD>
+		<index>137</index>
+		<Concentration>16.8 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>138</index>
+		<Concentration>76 mg/L</Concentration>
+		<Duration>48 hr </Duration>
+		<FI>INTERNATIONAL FLAVORS &amp; FRAGRANCES ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>139</index>
+		<Concentration>&gt;1.0 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>140</index>
+		<Concentration>108.8 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>141</index>
+		<Concentration>43 (34-56) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>&lt;=24 Hour(s), Intoxication, Immobile, EC50&#9;,2 Day(s) // 1 result from ECOTOX</FI>
+	</RECORD>
+	<RECORD>
+		<index>142</index>
+		<Concentration>&gt; 1,084 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Central Drug House (P) Ltd ; MATERIAL SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>143</index>
+		<Concentration>&gt; 100 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>COATEX SAS ; MATERIAL SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>144</index>
+		<Concentration>24 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Vigon International, Inc. ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>145</index>
+		<Concentration>4.65 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>146</index>
+		<Concentration>2.7 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>147</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>148</index>
+		<Concentration>410 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>149</index>
+		<Concentration>8.3 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>150</index>
+		<Concentration>1.16 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>151</index>
+		<Concentration>17ppm</Concentration>
+		<Duration>48hr</Duration>
+		<FI>EC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: static; Concentration: 17 ppm for 48 hr (95% confidence limit: 11-33 ppm); Effect: intoxication, immobilization /4.0% AI formulated product/ // 2 results from ECOTOX
+USEPA, Office of Pesticide Programs; Pesticide Ecotoxicity Database (2000) on Dipentene (138-86-3). Available from, as of January 19, 2006: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)</FI>
+	</RECORD>
+	<RECORD>
+		<index>152</index>
+		<Concentration>7.7 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Vigon International, Inc ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>153</index>
+		<Concentration> 15 mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>EC50; Species: Daphnia magna (water flea) &lt; or = 24 hr old; Conditions: static, 20 + or - 1 °C, water hardness 240 mg/L (CaCO3), pH 7.7-8.0; Concentration: 15 mg/L for 48 hr; Effect: immobility /Purity 97.1%/
+Organization for Economic Cooperation and Development; Screening Information Data Set for LINALYL ACETATE (115-95-7) p.15 &amp; 42 (March 2002). Available from, as of July 14, 2008: http://www.chem.unep.ch/irptc/sids/OECDSIDS/sidspub.html
+Hazardous Substances Data Bank (HSDB)</FI>
+	</RECORD>
+	<RECORD>
+		<index>154</index>
+		<Concentration>5.2 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Fisher Scientific ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>155</index>
+		<Concentration>2.4 mg/L </Concentration>
+		<Duration>48 hr</Duration>
+		<FI>PeroxyChem LLC ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>156</index>
+		<Concentration>527 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Spectrum Chemical Mfg. Corp ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>157</index>
+		<Concentration>0.357 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>158</index>
+		<Concentration>0.48 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Vigon International, Inc. ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>159</index>
+		<Concentration>0.27 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Kimberly-Clark Australia Pty. Limited ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>160</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>161</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>162</index>
+		<Concentration>1.7 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>ECHA ; European Chemicals Agency</FI>
+	</RECORD>
+	<RECORD>
+		<index>163</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>164</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>165</index>
+		<Concentration>&gt; 500 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>Fisher Scientific ; SAFETY DATA SHEET</FI>
+	</RECORD>
+	<RECORD>
+		<index>166</index>
+		<Concentration>105 (72-121) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox ; Age : &lt;24 Hour(s)</FI>
+	</RECORD>
+	<RECORD>
+		<index>167</index>
+		<Concentration>0.11 mg/L</Concentration>
+		<Duration>48 hr</Duration>
+		<FI>PPDB : Pesticide Properties Database / Agriculture &amp; Environment Research Unit (AERU) at the University of Hertfordshire / F4 Daphnia magna</FI>
+	</RECORD>
+</RECORDS>
+

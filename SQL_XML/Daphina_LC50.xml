@@ -1,0 +1,1050 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+	<RECORD>
+		<index>1</index>
+		<Concentration>1800 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem</FI>
+	</RECORD>
+	<RECORD>
+		<index>2</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>3</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>4</index>
+		<Concentration>265 AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 347 AI mg/L (24 hrs, ecotox), 607 AI mg/L (1.0417 Day(s), ecotox), 565 AI mg/K (2 days, ecotox), 524 AI mg/L (4 days, ecotox), 265 AI mg/L (1day, ecotox), 524 AI mg/L (4.2 days, ecotox), 265 AI mg/L (2days, ecotox), 2380 (1900-2870) AI mg/L (1 day, ecotox), 1640 (1170-2030) AI mg/L (2 days, ecotox), 552.4 AI mg/L (4.1667 days, ecotox), 322.4 AI mg/L (4.1667 days, ecotox), 266.6 AI mg/L (4.1667 days, ecotox), 614.7 AI mg/L (1.0417 days, ecotox), 565.8 AI mg/L (2.0833 days, ecotox), 387.5 AI mg/L (1.0417 days, ecotox), 333.2 AI mg/L (2.0833 days, ecotox), 287.3 AI mg/L (1.0417 days, ecotox), 280.2 AI mg/L (2.0833 days, ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>5</index>
+		<Concentration>1640 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 1411.24734 AI mg/L (48 hrs, Ecotox), 1147.70115 AI mg/L (48 hrs, Ecotox), 1802.31588 AI mg/L (48 hrs, Ecotox), 2235.89187 AI mg/L (48 hrs, Ecotox), 1266.72201 AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>6</index>
+		<Concentration>1640 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem</FI>
+	</RECORD>
+	<RECORD>
+		<index>7</index>
+		<Concentration>2564000 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 8384000 ug/L (24 hrs, Pubchem), 4547000 ug/L (96 hrs, Pubchem), 1551000 ug/L (48 hrs, Pubchem), 4547 mg/L (96 hrs, Pubchem), 6800 AI mg/L (24 hrs, Ecotox), 6100 AI mg/L (48 hrs, Ecotox), 8384 AI mg/L (24 hrs, Ecotox), 2564 AI mg/L (48 hrs, Ecotox), 725 AI mg/L (72 hrs, Ecotox),  630 AI mg/L (96 hrs, Ecotox), 4547 AI  (96 hrs, Ecotox), 8384 AI mg/L (24 hrs, Ecotox), 9256.27677065 AI mg/L (48 hrs, Ecotox), 2564 AI mg/L (48 hrs, Ecotox), 6290 (5790-7070) AI mg/L (24 hrs, Ecotox), 4580 (4060-5360) AI mg/L (48 hrs, Ecotox), 5218.14 (3650-7460) AI mg/L (48 hrs, Ecotox),  8600 (8390-8770) AI mg/L (48 hrs, Ecotox), 5514 AI mg/L (4.1667 days, Ecotox), 4135 AI mg/L (4.1667 days, Ecotox), 2752 AI mg/L (4.1667 days, Ecotox), 6949 AI mg/L (1.0417 days, Ecotox), 5966 AI mg/L (2.0833 days, Ecotox), 6490 AI mg/L (1.0417 days, Ecotox), 5056 AI mg/L (2.0833 days, Ecotox), 6097 AI mg/L (1.0417 days, Ecotox), 4822 AI mg/L (2.0833 days, Ecotox), 1194 AI mg/L (48 hrs, Ecotox), 1551 AI mg/L (48 hrs, Ecotox), 3342 AI mg/L (48 hrs, Ecotox), 3203 AI mg/L (48 hrs, Ecotox), 1194 AI mg/L (48 hrs, Ecotox), 3203 AI mg/L (48 hrs, Ecotox), 3808 AI mg/L (48 hrs, Ecotox), 1563 AI mg/L (48 hrs, Ecotox), 1985 AI mg/L (48 hrs, Ecotox), 4395 AI mg/L (48 hrs, Ecotox), 5218.14 (3600-7460) AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>8</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>9</index>
+		<Concentration>29.7 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Central Drug House (P) Ltd - Material Safety Data Sheet SDS/MSDS (https://www.cdhfinechemical.com/images/product/msds/37_1158318600_n-LAUROYLSARCOSINESODIUMSALT-CASNO.137-16-6-MSDS.pdf)</FI>
+	</RECORD>
+	<RECORD>
+		<index>10</index>
+		<Concentration>formulation 1.01 (0.85-1.21) AI mg/L</Concentration>
+		<Duration>4 days</Duration>
+		<FI>Ecotox, formulation 0.96 (0.9-1.03) AI mg/L (21 days, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>11</index>
+		<Concentration>0.032 (0.001-0.036) AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 0.055 (0.045-0.068) AI mg/L (48 hrs, Ecotox), 2.1 AI mg/L (4 days, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>12</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>13</index>
+		<Concentration>0.577 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 0.924 AI mg/L (48 hrs, Ecotox), 0.577 (0.496-0.672) AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>14</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>15</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>16</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>17</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>18</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>19</index>
+		<Concentration>&gt;10 mg/L</Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>Pubchem, &gt;50  AI mg/L (24 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>20</index>
+		<Concentration>310 (240-420) AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 310 (240-420) AI mg/L (24 hrs, Ecotox), 86.3 (54.6-174.7) AI mg/L (48 hrs, Ecotox), 97.7 (54.6-174.7) AI mg/L (48 hrs, Ecotox), 470 AI mg/L (24 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>21</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>22</index>
+		<Concentration>6460 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem</FI>
+	</RECORD>
+	<RECORD>
+		<index>23</index>
+		<Concentration>9248000 ug/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 454000 ug/L (9 days, Pubchem), 9300 AI mg/L (48 hrs, Ecotox), 13248 (11825-15009) AI mg/L (48 hrs, Ecotox), 11853 (10705-13294) AI mg/L (48 hrs, Ecotox), 11967 (10703-13599) AI mg/L (48 hrs, Ecotox), 14221 (12813-15804) AI mg/L (48 hrs, Ecotox), 12820 (9941-15386) AI mg/L (48 hrs, Ecotox), 14136 (11046-15780) AI mg/L (48 hrs, Ecotox), 13470 (12310-14724) AI mg/L (48 hrs, Ecotox), 10860 (9721-12237) AI mg/L (48 hrs, Ecotox), 9268 (8408-10367) AI mg/L (48 hrs, Ecotox), 9248 (7560-12600) AI mg/L (48 hrs, Ecotox), 454 (232-814) AI mg/L (9 days, Ecotox), 9788 (7387-12970) AI mg/L (24 hrs, Ecotox), 5680 (4364-7392) AI mg/L (48 hrs, Ecotox), &gt;10000 AI mg/L (24 hrs, Ecotox), &gt;100 AI mg/L (96 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>24</index>
+		<Concentration>625 AI mg/L</Concentration>
+		<Duration>24 hrs</Duration>
+		<FI>Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>25</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>26</index>
+		<Concentration>18340 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Pubchem, 43500 mg/L (48 hrs, Pubchem)</FI>
+	</RECORD>
+	<RECORD>
+		<index>27</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>28</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>29</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>30</index>
+		<Concentration>3.09 mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>echa.europa.eu(https://echa.europa.eu/bg/registration-dossier/-/registered-dossier/13634/6/2/4)</FI>
+	</RECORD>
+	<RECORD>
+		<index>31</index>
+		<Concentration>214.63 (174.27-256.17) AI mg/L</Concentration>
+		<Duration>21 days</Duration>
+		<FI>Ecotox, 377.17 (315.3-464.83) AI mg/L (4 days, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>32</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>33</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>34</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>35</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>36</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>37</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>38</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>39</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>40</index>
+		<Concentration>0.577 (0.496-0.672) AI mg/L</Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>Ecotox, 0.924 AI mg/L (48 hrs, Ecotox)</FI>
+	</RECORD>
+	<RECORD>
+		<index>41</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>42</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>43</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>44</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>45</index>
+		<Concentration>81.19799 mmol/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>PubChem,
+11 datas in PubChem;
+105 datas in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>46</index>
+		<Concentration>Formulation
+28 AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+12 Datas in Ecotox ( 1, 2, 4 Day(s) )</FI>
+	</RECORD>
+	<RECORD>
+		<index>47</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>48</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>49</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>50</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>51</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>52</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>53</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>54</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>55</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>56</index>
+		<Concentration>Formulation
+&gt; 10000 AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+14 datas in Ecotox(1, 2, 4, .1667 Day(s) )
+1 datas in PubChem</FI>
+	</RECORD>
+	<RECORD>
+		<index>57</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>58</index>
+		<Concentration>Formulation
+10 (8-13) AI mg/L</Concentration>
+		<Duration>4 Days</Duration>
+		<FI>Ecotox,
+11 datas in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>59</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>60</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>61</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>62</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>63</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>64</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>65</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>66</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>67</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>68</index>
+		<Concentration>8.98 mg/L </Concentration>
+		<Duration>48 hrs</Duration>
+		<FI>PubChem,
+35 mg/L for 24 hr (PubChem)</FI>
+	</RECORD>
+	<RECORD>
+		<index>69</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>70</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>71</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>72</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>73</index>
+		<Concentration>0.19 (0.1-0.56) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+21 datas(1,2,21 days) in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>74</index>
+		<Concentration>Formulation
+1.5 (1.3-1.7) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+Formulation
+4700 AI mg/L 1 Day(s) in Ecotox</FI>
+	</RECORD>
+	<RECORD>
+		<index>75</index>
+		<Concentration>Formulation
+137 (83-179) AI mg/L</Concentration>
+		<Duration>2 Day(s)</Duration>
+		<FI>Ecotox,
+5 datas(1 day, 2 days ) in Ecotox ; 
+3 datas(1 day, 2 days ) in PubChem</FI>
+	</RECORD>
+	<RECORD>
+		<index>76</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>77</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>78</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>79</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>80</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>81</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>82</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>83</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>84</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>85</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>86</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>87</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>88</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>89</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>90</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>91</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>92</index>
+		<Concentration>&gt; 100 mg/L</Concentration>
+		<Duration>96 hr</Duration>
+		<FI>ECHA.europa.eu</FI>
+	</RECORD>
+	<RECORD>
+		<index>93</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>94</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>95</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>96</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>97</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>98</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>99</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>100</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>101</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>102</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>103</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>104</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>105</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>106</index>
+		<Concentration>759 AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>echotox ; Age : , total 23 different LC data</FI>
+	</RECORD>
+	<RECORD>
+		<index>107</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>108</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>109</index>
+		<Concentration>307.11 (163.26-852.16) AI mg/L</Concentration>
+		<Duration>72 ~ 96 hr</Duration>
+		<FI>echotox ; Age : 1-48 Hour(s) (Instar)</FI>
+	</RECORD>
+	<RECORD>
+		<index>110</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>111</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>112</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>113</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>114</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>115</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>116</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>117</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>118</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>119</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>120</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>121</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>122</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>123</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>124</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>125</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>126</index>
+		<Concentration>13.5 (10-18) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>age:&lt;24 Hour(s),Fresh water,Mortality,LC50,2 Day(s)</FI>
+	</RECORD>
+	<RECORD>
+		<index>127</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>128</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>129</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>130</index>
+		<Concentration>37 ug/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>LC50; Species: Daphnia magna (Water flea); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 180 ug/L for 24 hr
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water flea) age &lt;24 hr; Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 200 ug/L for 24 hr /Bardac 22, 45% AI/
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water flea) age 24 hr; Conditions: freshwater, renewal, 20 °C, pH 8.1-8.3, hardness 180 mg/L CaCO3; Concentration: 37 ug/L for 48 hr (95% confidence interval: 28-48 ug/L) /80-82% purity; DDAC, Bardac 2280/
+Farrell AP et al; Environ Toxicol Chem 17 (8): 1552-57 (1998) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water flea) age &lt;24 hr); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 160 ug/L for 48 hr /Bardac 22, 45% AI/
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB) // 7 results from ECOTOX
+LC50; Species: Daphnia magna (Water flea); Conditions: freshwater, static, 19 °C, pH 8.2, hardness 209.43 mg/L CaCO3, dissolved oxygen &gt;6.5 mg/L; Concentration: 64 ug/L for 48 hr
+Canton JH, Mathijssen-Spiekman EAM; Rep.No.668115-001, Natl Inst Public Health Environ Hyg: 6 (1983) Available from, as of June 19, 2008: http://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)</FI>
+	</RECORD>
+	<RECORD>
+		<index>131</index>
+		<Concentration>(10-100) AI mg/L</Concentration>
+		<Duration>96hr</Duration>
+		<FI>Daphnia magna
+Water Flea&#9;Crustaceans; Standard Test Species, Formulation
+(10-100) AI mg/L, Mortality</FI>
+	</RECORD>
+	<RECORD>
+		<index>132</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>133</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>134</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>135</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>136</index>
+		<Concentration>1.17 (0.757-1.973) AI mg/L</Concentration>
+		<Duration>48hr</Duration>
+		<FI>LC50; Species: Daphnia magna (Water Flea) age 6-24 hr, parthenogenetic; Conditions: freshwater, static, no suspended solids, pH 7.0, dissolved oxygen 7.0 mg/L; Concentration: 568 ug/L for 24 hr (95% confidence interval: 440-754 ug/L) /77.45% purity/
+Chen F et al; Bull Environ Contam Toxicol 95 (1): 73-79 (2015) as cited in the ECOTOX database. Available from, as of May 14, 2018: https://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water Flea) age 6-24 hr, parthenogenetic; Conditions: freshwater, static, no suspended solids, pH 7.0, dissolved oxygen 7.0 mg/L; Concentration: 194 ug/L for 48 hr (95% confidence interval: 137-253 ug/L) /77.45% purity/
+Chen F et al; Bull Environ Contam Toxicol 95 (1): 73-79 (2015) as cited in the ECOTOX database. Available from, as of May 14, 2018: https://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water Flea) age 6-24 hr, parthenogenetic; Conditions: freshwater, static, suspended solid solution, total organic carbon content 4.5%, pH 7.6, dissolved oxygen 7.0 mg/L; Concentration: 2413 ug/L for 24 hr (95% confidence interval: 2128-2769 ug/L) /77.45% purity/
+Chen F et al; Bull Environ Contam Toxicol 95 (1): 73-79 (2015) as cited in the ECOTOX database. Available from, as of May 14, 2018: https://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)
+LC50; Species: Daphnia magna (Water Flea) age 6-24 hr, parthenogenetic; Conditions: freshwater, static, suspended solid solution, total organic carbon content 4.5%, pH 7.6, dissolved oxygen 7.0 mg/L; Concentration: 1170 ug/L for 48 hr (95% confidence interval: 757-1973 ug/L) /77.45% purity/
+Chen F et al; Bull Environ Contam Toxicol 95 (1): 73-79 (2015) as cited in the ECOTOX database. Available from, as of May 14, 2018: https://cfpub.epa.gov/ecotox/quick_query.htm
+Hazardous Substances Data Bank (HSDB)//4 results from ECOTOX</FI>
+	</RECORD>
+	<RECORD>
+		<index>137</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>138</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>139</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>140</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>141</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>142</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>143</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>144</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>145</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>146</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>147</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>148</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>149</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>150</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>151</index>
+		<Concentration>0.577 (0.496-0.672) AI mg/L</Concentration>
+		<Duration>96hr</Duration>
+		<FI>2 results from ECOTOX</FI>
+	</RECORD>
+	<RECORD>
+		<index>152</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>153</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>154</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>155</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>156</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>157</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>158</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>159</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>160</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>161</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>162</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>163</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>164</index>
+		<Concentration>&gt; 100 AI mg/L</Concentration>
+		<Duration>96hr</Duration>
+		<FI>echotox ; Age : Larva(1-2 Instar)</FI>
+	</RECORD>
+	<RECORD>
+		<index>165</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>166</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+	<RECORD>
+		<index>167</index>
+		<Concentration/>
+		<Duration/>
+		<FI/>
+	</RECORD>
+</RECORDS>
+
