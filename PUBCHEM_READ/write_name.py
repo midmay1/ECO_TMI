@@ -6,7 +6,7 @@ import sys
 
 f = open("INPUT",'r')
 stringn = f.readline()
-sid = float(stringn)
+sid = int(stringn)
 
 switch = 0
 n = 0
