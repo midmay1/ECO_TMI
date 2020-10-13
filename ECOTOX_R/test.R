@@ -16,7 +16,7 @@ CAS_list <- vector()
 for (i in 1:length(test_list) ) {
   tid <- test_list[i]
   #print(tid)
-  CAS_list <= c(CAS_list, test[which(test$test_id == tid),3])
+  CAS_list <- c(CAS_list, test[which(test$test_id == tid),3])
   #print(test[which(test$test_id == tid),3])
 }
 #head(chem_yes)
