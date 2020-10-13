@@ -22,3 +22,5 @@ for (i in 1:length(test_list) ) {
 #head(chem_yes)
 CAS_list <- sort( unique(CAS_list) )
 NCAS <- length(CAS_list)
+print(NCAS)
+
