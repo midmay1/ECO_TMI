@@ -3,3 +3,4 @@ SQL_XML/*.xml
 ECOTOX_R/*.pdf
 ECOTOX_R/*.txt
 ECOTOX_R/validation/*
+.Rproj.user
