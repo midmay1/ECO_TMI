@@ -11,7 +11,9 @@ Nresults <- nrow(result_yes)
 test_list = sort( unique(result_yes[,2]) )
 chem <- read.table(file="chemical_carriers.txt",header=TRUE,fill=TRUE, sep="|",quote="")
 
+chem_yes <- vector()
 for (tid in test_list){
-  chem_yes <- subset(chem, test_id == tid)
+  chem_yes <- rbind(chem_yes, subset(chem, test_id == tid)[,3])
 }
 head(chem_yes)
+
