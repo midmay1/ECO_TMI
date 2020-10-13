@@ -1,0 +1,6 @@
+setwd("/Users/jonghochoi/Documents/ECO")
+getwd()
+test <- read.table(file="tests.txt",header=TRUE,fill=TRUE, sep="|",quote="")
+result <- read.table(file="results.txt",header=TRUE,fill=TRUE, sep="|",quote="")
+result_yes <- subset(result, endpoint=="LC50" | endpoint=="LC50*" | endpoint=="EC50" | endpoint=="EC50*" )
+head(result_yes)
