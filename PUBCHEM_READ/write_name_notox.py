@@ -1,7 +1,7 @@
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
 import pubchempy as pcp
 import cirpy as cp
-from urllib.request import urlopen
+#from urllib.request import urlopen
 import sys
 
 f = open("INPUT",'r')
@@ -12,13 +12,13 @@ switch = 0
 n = 0
 m = 0
 
-string0 = "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
-string = string0 + "%d/XML/?response_type=display" % sid
+#string0 = "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/"
+#string = string0 + "%d/XML/?response_type=display" % sid
 
-url = string
-response = urlopen(url)
-web_source = response.read().decode("utf-8")
-xtree = ET.fromstring(web_source)
+#url = string
+#response = urlopen(url)
+#web_source = response.read().decode("utf-8")
+#xtree = ET.fromstring(web_source)
 
 com = pcp.Compound.from_cid(stringn)
 sys.stdout = open("iupac_name","w")
