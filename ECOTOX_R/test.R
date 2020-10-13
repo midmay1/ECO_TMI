@@ -12,15 +12,18 @@ test_list = sort( unique(result_yes[,2]) )
 chem <- read.table(file="chemical_carriers.txt",header=TRUE,fill=TRUE, sep="|",quote="")
 
 #head(test)
-CAS_list <- vector()
+#CAS <- file("CAS.txt")
 for (i in 1:length(test_list) ) {
   tid <- test_list[i]
   #print(tid)
-  CAS_list <- c(CAS_list, test[which(test$test_id == tid),3])
+  #CAS_list <- c(CAS_list, test[which(test$test_id == tid),3])
   #print(test[which(test$test_id == tid),3])
+  text <- as.character( test[which(test$test_id == tid),3] )
+  write(text, file = "CAS.txt",append=TRUE)
 }
 #head(chem_yes)
-CAS_list <- sort( unique(CAS_list) )
-NCAS <- length(CAS_list)
-print(NCAS)
+close(CAS)
+#CAS_list <- sort( unique(CAS_list) )
+#NCAS <- length(CAS_list)
+#print(NCAS)
 
