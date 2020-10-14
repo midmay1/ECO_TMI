@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 
 db_folder = './database_sample/'
-json_file_name = 'natural-unpd-81372-new-79553_with_MS.json'
+#json_file_name = 'natural-unpd-81372-new-79553_with_MS.json'
+json_file_name = 'SMILES_MS_v2.json'
 
 def load_db():
     xml_folder = os.path.join(db_folder, 'PUBCHEM', 'XML')
