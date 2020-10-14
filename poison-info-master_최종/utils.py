@@ -39,27 +39,58 @@ def load_db():
     return df, msms_data
 
 def load_poison_info(searched_cid):
-    xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
+    toxic_list_all = ["PUBCHEM DATA\n"]
+    try:
+        xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
                             'output.{}.xml'.format(searched_cid))
 
-    xml_data = ET.parse(xml_file).getroot()
-    str_data = ET.tostring(xml_data, encoding='utf8').decode('utf8')
+        xml_data = ET.parse(xml_file).getroot()
+        str_data = ET.tostring(xml_data, encoding='utf8').decode('utf8')
     
-    name_start_str = '<ns0:RecordTitle>'
-    name_end_str = name_start_str.replace('ns0', '/ns0')
-    regex = re.compile(r'{}.*{}'.format(name_start_str, name_end_str))
-    name = regex.findall(str_data)[0]
-    name = name.replace(name_start_str, '').replace(name_end_str, '')
+        name_start_str = '<ns0:RecordTitle>'
+        name_end_str = name_start_str.replace('ns0', '/ns0')
+        regex = re.compile(r'{}.*{}'.format(name_start_str, name_end_str))
+        name = regex.findall(str_data)[0]
+        name = name.replace(name_start_str, '').replace(name_end_str, '')
     
-    start_str = '<ns0:String>'
-    end_str = start_str.replace('ns0', '/ns0')
-    regex = re.compile(r'{}.*{}'.format(start_str, end_str))
+        start_str = '<ns0:String>'
+        end_str = start_str.replace('ns0', '/ns0')
+        regex = re.compile(r'{}.*{}'.format(start_str, end_str))
 
-    toxic_list = regex.findall(str_data)
-    toxic_list = [html.unescape(i.replace(start_str, '').replace(end_str, ''))
-                   for i in toxic_list]
-    
-    return name, toxic_list
+        toxic_list = regex.findall(str_data)
+        toxic_list = [html.unescape(i.replace(start_str, '').replace(end_str, '')) for i in toxic_list]
+        toxic_list_all = toxic_list_all + toxic_list
+    except:
+        print("NO PUBCHEM DATA")
+        toxic_list_all = toxic_list_all + ["NO DATA\n"]
+        name = "NO DATA"
+
+
+    ##### TEST ###### read more files
+    toxic_list_all = toxic_list_all + ["HANDMADE DATA\n"]
+    try:
+        xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
+                            'handmade.{}.xml'.format(searched_cid))
+
+        xml_data = ET.parse(xml_file).getroot()
+        str_data = ET.tostring(xml_data, encoding='utf8').decode('utf8')
+
+        start_str = '<Toxicty>'
+        end_str = start_str.replace('T', '/T')
+        regex = re.compile(r'{}.*{}'.format(start_str, end_str))
+
+        toxic_app = regex.findall(str_data)
+        toxic_app = [html.unescape(i.replace(start_str, '').replace(end_str, '')) for i in toxic_app]
+
+        toxic_list_all = toxic_list_all + toxic_app
+    except:
+        print("NO HANDMADE DATA")
+        toxic_list_all = toxic_list_all + ["NO DATA\n"]
+
+
+    ###############################################################
+
+    return name, toxic_list_all
 
 def plot_mass(ax, mz_array, intensity_array):
     mz_array = np.array(mz_array)
