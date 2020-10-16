@@ -44,6 +44,7 @@ for cid in cid_list :
 
  if switchL == 1 :
   N_LC50_C = N_LC50_C + 1
+
  if switchE == 1 :
   N_EC50_C = N_EC50_C + 1
 
