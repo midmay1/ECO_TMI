@@ -48,13 +48,13 @@ for cid in cid_list :
  if switchE == 1 :
   N_EC50_C = N_EC50_C + 1
 
-print(N_data)
-print(len(cid_list))
+print("number of toxicity data:",N_data)
+print("number of compounds",len(cid_list))
 
-print(N_LC50)
-print(N_EC50)
+print("number of LC50 data:",N_LC50)
+print("number of EC50 data:",N_EC50)
 
-print(N_LC50_C)
-print(N_EC50_C)
+print("number of compounds have LC50 data:",N_LC50_C)
+print("number of compounds have EC50 data:",N_EC50_C)
 
 
