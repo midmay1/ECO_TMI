@@ -6,3 +6,5 @@ ECOTOX_R/validation/*
 .Rproj.user
 V1_DATABASE/*
 poison-info-master_최종/database_sample/*
+poison-info-master_최종/*.pkl
+
