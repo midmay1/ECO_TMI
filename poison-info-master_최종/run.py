@@ -190,16 +190,19 @@ class MyApp(QWidget):
         self.msinfo_table = QTableWidget()
         self.msinfo_table.setColumnCount(1)
         self.msinfo_table.horizontalHeader().setVisible(False)
-        self.msinfo_table.setRowCount(4)
+        self.msinfo_table.setRowCount(8)
 
-        self.msinfo_table.setVerticalHeaderLabels(["        ", "        ", " ", " "])
+        self.msinfo_table.setVerticalHeaderLabels(["                                      "," "," "," "," "," "," "," "])
+
+#        self.msinfo_table.setStyleSheet("Color : Whitegray")
+
 
         self.header_list = []
 #        self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
-        self.msinfo_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
 
-        self.msinfo_table.setColumnWidth(0, 250)
+
+        self.msinfo_table.setColumnWidth(0,3000)
 
         vbox = QVBoxLayout()
         vbox.addWidget(self.msinfo_table)
@@ -584,6 +587,10 @@ class MyApp(QWidget):
                 self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
                 idx_ms += 1
             self.msinfo_table.setVerticalHeaderLabels(self.header_list)
+
+            self.msinfo_table.setStyleSheet("Color : black")
+
+            self.msinfo_table.resizeColumnsToContents()
 
             self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
