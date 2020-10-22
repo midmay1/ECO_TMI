@@ -643,6 +643,7 @@ class MyApp(QWidget):
             if fn != '':
                 if QFileInfo(fn).suffix() == "" : fn += '.pdf'
                 printer = QPrinter(QPrinter.HighResolution)
+                #printer = QPrinter(QPrinter.ScreenResolution)
                 printer.setOutputFormat(QPrinter.PdfFormat)
                 printer.setOutputFileName(fn)
                 entire_text.document().print_(printer)
