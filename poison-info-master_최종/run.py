@@ -398,7 +398,7 @@ class MyApp(QWidget):
 
         ##########################set poison text module start###################################
         DBid = 2
-        name, all_poison_list = utils.load_poison_info(searched_cid, DBid)
+        all_poison_list = utils.load_poison_info(searched_cid, DBid)
 
         self.info_table.setItem(0, 0, QTableWidgetItem(name))
         self.info_table.setItem(1, 0, QTableWidgetItem(iupac_name))
