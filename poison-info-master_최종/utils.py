@@ -79,8 +79,8 @@ def load_db():
 
     return df, msms_data
 
-def load_poison_info(searched_cid):
-    toxic_list_all = ["PUBCHEM DATA\n"]
+def load_poison_info(searched_cid,DBid):
+   if DBid == 1 :
     try:
         xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
                             'output.{}.xml'.format(searched_cid))
@@ -100,15 +100,15 @@ def load_poison_info(searched_cid):
 
         toxic_list = regex.findall(str_data)
         toxic_list = [html.unescape(i.replace(start_str, '').replace(end_str, '')) for i in toxic_list]
-        toxic_list_all = toxic_list_all + toxic_list
     except:
         print("NO PUBCHEM DATA")
-        toxic_list_all = toxic_list_all + ["NO DATA\n"]
+        toxic_list = ["NO DATA\n"]
         name = "NO DATA"
+    return name, toxic_list
 
 
     ##### TEST ###### read more files
-    toxic_list_all = toxic_list_all + ["HANDMADE DATA\n"]
+   if DBid == 2 :
     try:
         xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
                             'handmade.{}.xml'.format(searched_cid))
@@ -123,15 +123,11 @@ def load_poison_info(searched_cid):
         toxic_app = regex.findall(str_data)
         toxic_app = [html.unescape(i.replace(start_str, '').replace(end_str, '')) for i in toxic_app]
 
-        toxic_list_all = toxic_list_all + toxic_app
     except:
         print("NO HANDMADE DATA")
-        toxic_list_all = toxic_list_all + ["NO DATA\n"]
+        toxic_app= ["NO DATA\n"]
 
-
-    ###############################################################
-
-    return name, toxic_list_all
+    return toxic_app
 
 def plot_mass(ax, mz_array, intensity_array):
     mz_array = np.array(mz_array)
