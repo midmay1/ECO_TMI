@@ -10,6 +10,7 @@ from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
 from PyQt5.QtGui import QTextCursor
 from PyQt5.Qt import QFileInfo
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+import numpy as np
 
 class MyApp(QWidget):
     def __init__(self):
@@ -245,23 +246,49 @@ class MyApp(QWidget):
         ### related to search grid ###
         df = self.toxic_db
         searched_type = str(self.search_type_list.currentText())
-        searched_input = self.search_line.text().replace(' ','')
+        searched_input = self.search_line.text()
         
         if searched_type == 'CAS':
             try:
-                searched_cid = df[list(map(lambda f: searched_input in f, df['CAS']))]['cid'].item()
+                searched_input = searched_input.replace(' ','')
+                searched_result=list(map(lambda f: searched_input in f, df['CAS']))
+
+                # if there are more than one results , print first "True" cid number 
+                searched_result=np.array(searched_result)
+                print(searched_result)
+                if len(np.where(searched_result==True)[0])!= 1:
+                    print("Searche results > 1")
+                    #searched_cid = df.values[np.where(searched_result==True)[0][1]][0]
+                    searched_cid = df.values[np.where(searched_result==True)[0][0]][0]
+                else:
+                    #searched_cid = df[list(map(lambda f: searched_input in f, df['CAS']))]['cid'].item()
+                    searched_cid = df[searched_result]['cid'].item()
             except:
                 QMessageBox.about(self, "No results found.", "We do not have any datas for \"{}\"".format(searched_input))
                 return
         elif searched_type == 'IUPAC':
             try:
-                searched_cid = df[df['IUPAC']==searched_input]['cid'].item()
+                searched_input = searched_input.strip()
+                searched_result= df['IUPAC']==searched_input
+                if len(np.where(searched_result==True)[0]) != 1:
+                    print("Searche results > 1")
+                    searched_cid = df.values[np.where(searched_result==True)[0][0]][0]
+                else:
+                    searched_cid = df[df['IUPAC']==searched_input]['cid'].item()
+                #searched_cid = df[df['IUPAC']==searched_input]['cid'].item()
             except:
                 QMessageBox.about(self, "No results found.", "We do not have any datas for \"{}\"".format(searched_input))
                 return
         elif searched_type == 'SMILES':
             try:
-                searched_cid = df[df['SMILES']==searched_input]['cid'].item()
+                searched_input = searched_input.replace(' ','')
+                searched_result= df['SMILES']==searched_input
+                if len(np.where(searched_result==True)[0]) != 1:
+                    print("Searche results > 1")
+                    searched_cid = df.values[np.where(searched_result==True)[0][0]][0]
+                else:
+                    searched_cid = df[df['SMILES']==searched_input]['cid'].item()
+                #searched_cid = df[df['SMILES']==searched_input]['cid'].item()
             except:
                 QMessageBox.about(self, "No results found.", "We do not have any datas for \"{}\"".format(searched_input))
                 return
