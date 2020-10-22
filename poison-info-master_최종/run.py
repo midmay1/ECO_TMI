@@ -391,8 +391,8 @@ class MyApp(QWidget):
                                                                                'oryzias latipes' not in p.lower() and \
                                                                                'daphnia' not in p.lower()]
         
-        filtered_poison_list = ['    ▶︎  '+ f for f in filtered_poison_list]
-        poison_text = 'Ecotoxicity data form pubchem' + '\n\n' + '\n\n'.join(filtered_poison_list)
+        filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  '+ f for f in filtered_poison_list]
+        poison_text = '<p style="font-size: 15px"><b>Ecotoxicity data form pubchem</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
 
         ##########################set poison text module end###################################
 
@@ -485,8 +485,8 @@ class MyApp(QWidget):
                                          'oryzias latipes' not in p.lower() and \
                                          'daphnia' not in p.lower()]
 
-        filtered_poison_list = ['    ▶︎  ' + f for f in filtered_poison_list]
-        poison_text = poison_text+ '\n\n'+ 'Ecotoxicity data of 생활화학제품 from various DBs' + '\n\n' + '\n\n'.join(filtered_poison_list)
+        filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  '+ f for f in filtered_poison_list]
+        poison_text = poison_text+ '<br><br>'+ '<p style="font-size: 15px"><b>Ecotoxicity data of 생활화학제품 from various DBs</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
 
         ##########################set poison text module end###################################
         self.poison_text.setText(poison_text)
