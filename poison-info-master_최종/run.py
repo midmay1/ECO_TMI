@@ -29,8 +29,10 @@ class MyApp(QWidget):
         left_grid = QGridLayout()
         self.search_grid = self._create_search_grid()
         self.info_grid = self._create_info_grid()
+        self.action_grid = self._create_action_grid()
         left_grid.addWidget(self.search_grid)
         left_grid.addWidget(self.info_grid)
+        left_grid.addWidget(self.action_grid)
 
         right_grid = QGridLayout()
         self.poison_grid = self._create_poison_grid()
@@ -40,8 +42,13 @@ class MyApp(QWidget):
                 
         grid.addLayout(left_grid, 0, 0, 1, 1)
         grid.addLayout(right_grid, 0, 1, 1, 3)
-        
-        self.setWindowTitle('POISON SEARCH')
+
+        ## (Added) Fix the left grid #################
+        grid.setColumnStretch(0, 0.1)
+        grid.setColumnStretch(1, 2)
+        ##############################################
+
+        self.setWindowTitle('TOXMASS 1.0')
         self.setLayout(grid)
         self.center()
         self.show()
@@ -66,12 +73,12 @@ class MyApp(QWidget):
         self.search_type_list.addItem('SMILES')
         
         search_btn = QPushButton('Search')
-        search_btn.clicked.connect(self.search_btn_click_event) # Refer to 2.1.3 function
-        
+        search_btn.clicked.connect(self.search_btn_click_event)  # Refer to 2.1.3 function
+
         self.search_line = QLineEdit('')
         self.search_line.resize(self.search_line.sizeHint())
-        self.search_line.returnPressed.connect(search_btn.click) # Refer to 2.1.3 function
-        
+        self.search_line.returnPressed.connect(search_btn.click)  # Refer to 2.1.3 function
+
         search_layout.addWidget(self.search_type_list)
         search_layout.addWidget(self.search_line)
         search_layout.addWidget(search_btn)
@@ -82,7 +89,7 @@ class MyApp(QWidget):
         species_layout = QVBoxLayout()
         
         self.species_all = QCheckBox('all')
-        self.species_all.stateChanged.connect(self.species_all_btn_click_event) # Refer to 2.1.1 function
+        self.species_all.stateChanged.connect(self.species_all_btn_click_event)  # Refer to 2.1.1 function
         self.species_btn1 = QCheckBox('zebra fish')
         self.species_btn2 = QCheckBox('fathead minnow')
         self.species_btn3 = QCheckBox('medaka')
@@ -99,10 +106,10 @@ class MyApp(QWidget):
         
         # Endpoint layout
         endpoint_group = QGroupBox('End point')
-        endpoint_layout = QHBoxLayout()
-        
+        endpoint_layout = QVBoxLayout()
+
         self.ep_all = QCheckBox('all')
-        self.ep_all.stateChanged.connect(self.endpoint_all_btn_click_event) # Refer to 2.1.2 function
+        self.ep_all.stateChanged.connect(self.endpoint_all_btn_click_event)  # Refer to 2.1.2 function
         self.ep_lc_btn = QCheckBox('LC50')
         self.ep_ec_btn = QCheckBox('EC50')
         self.ep_others = QCheckBox('others')
@@ -135,7 +142,33 @@ class MyApp(QWidget):
         vbox = QVBoxLayout()
         vbox.addWidget(self.info_table)
         groupbox.setLayout(vbox)
+#        QTableWidget.setMinimumSize(self.info_table, 357, 120)
+        self.info_table.setRowHeight(0,groupbox.height()/16)
+        self.info_table.setRowHeight(1,groupbox.height()/16)
+        self.info_table.setRowHeight(2,groupbox.height()/16)
+        self.info_table.setRowHeight(3,groupbox.height()/16)
+#        self.info_table.setColumnWidth(0, 300)
+        QTableWidget.setMinimumSize(self.info_table, 357, groupbox.height()/4)
+        QTableWidget.setFixedSize(self.info_table,357,groupbox.height()/4)
 
+        vbox.addStretch(0.001)
+
+        return groupbox
+
+    def _create_action_grid(self):
+        groupbox = QGroupBox(' ')
+
+        action_layout = QHBoxLayout()
+#
+        save_btn = QPushButton('Save')
+        save_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='save'))  # Refer to 2.4.1 function
+#
+        print_btn = QPushButton('Print')
+        print_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='print'))  # Refer to 2.4.1 function
+#
+        action_layout.addWidget(save_btn)
+        action_layout.addWidget(print_btn)
+        groupbox.setLayout(action_layout)
         return groupbox
     
     # 2.3 Create poison grid
@@ -173,22 +206,26 @@ class MyApp(QWidget):
         self.reference_line.setReadOnly(True)
         
         # Create save and print button
-        self.save_print_group = QGroupBox('')
-        save_print_layout = QHBoxLayout()
-        
-        save_btn = QPushButton('Save')
-        save_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='save')) # Refer to 2.4.1 function
-        
-        print_btn = QPushButton('Print')
-        print_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='print')) # Refer to 2.4.1 function
-        
-        save_print_layout.addWidget(save_btn)
-        save_print_layout.addWidget(print_btn)
-        self.save_print_group.setLayout(save_print_layout)
-        
+#        self.save_print_group = QGroupBox('')
+#        save_print_layout = QHBoxLayout()
+
+#        info_btn = QPushButton('Info')
+#        info_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='info'))
+
+#        save_btn = QPushButton('Save')
+#        save_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='save'))  # Refer to 2.4.1 function
+
+#        print_btn = QPushButton('Print')
+#        print_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='print'))  # Refer to 2.4.1 function
+
+#        save_print_layout.addWidget(info_btn)
+#        save_print_layout.addWidget(save_btn)
+#        save_print_layout.addWidget(print_btn)
+#        self.save_print_group.setLayout(save_print_layout)
+
         mass_layout.addWidget(self.mass_canvas)
         mass_layout.addWidget(self.reference_line)
-        mass_layout.addWidget(self.save_print_group)
+ #       mass_layout.addWidget(self.save_print_group)
         groupbox.setLayout(mass_layout)
         
         return groupbox, mass_layout
