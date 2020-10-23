@@ -23,9 +23,9 @@ def indent(elem, level=0):  # 자료 출처 https://goo.gl/J8VoDK
 
 def converting(n):
     path = './SQL_XML'
-    OA = os.path.join(path, "excel.%d.xml" % n)
+    OA = os.path.join(path, "Experiment.%d.xml" % n)
     xml_data = ET.parse(OA).getroot()
-    root = ET.Element("Excel_XML")
+    root = ET.Element("Experiment_XML")
     node1 = ET.Element("RECORDS")
     node1.text = " "
     root.append(node1)
@@ -39,41 +39,26 @@ def converting(n):
             node2 = ET.SubElement(node1, i.tag)
             node2.text = i.text
             if i.tag == "SMILES":
-                # print(i.text)
+                print(i.text, "Smiles")
                 CID = str(pcp.get_compounds(i.text, 'smiles'))
                 CID = CID.replace('[Compound(', '').replace(')]', '')
+                print(i.text, CID, "smiles and CID")
 
     if len(get) == 0:
         pass
     else:
-        nslice = 3
         data = []
-        l = nslice
-        for i in range(0, len(get), nslice):
-            data.append(get[i:l])
-            l = l + nslice
+        data.append(get[0:3])
+        data.append(get[4:8])
 
-        slice = 0
         for slice in range(0, len(data)):
             B = []
             for i in xml_data[0].iter():
                 if len(get) != 0 and i.tag in data[slice]:
-                    if i.tag[-1] == str(1) or i.tag[-1] == str(2):
-                        i.tag = i.tag[:-1]
-                        i.tag = html.unescape(str(i.tag))
-                        i.text = html.unescape(str(i.text))
-                        # print("----list----")
-                        # print(i.tag)
-                        # print(i.text)
-                        A = i.tag + " : " + i.text
-                        B.append(A)
-                    else:
-                        i.tag = html.unescape(str(i.tag))
-                        i.text = html.unescape(str(i.text))
-                        # print(i.tag)
-                        # print(i.text)
-                        A = i.tag + " : " + i.text
-                        B.append(A)
+                    i.tag = html.unescape(str(i.tag))
+                    i.text = html.unescape(str(i.text))
+                    A = i.tag + " : " + i.text
+                    B.append(A)
 
             node2 = ET.SubElement(node1, "Toxicity")
             node2.text = "  ".join(B)
@@ -84,15 +69,13 @@ def converting(n):
         if CID == "NO DATA":
             pass
         else:
-            tree.write('./환경부로토스/' + 'excel_new.%d.xml' % int(CID), xml_declaration=True, encoding='utf8')
-        # print(CID)
-        # print(type(int(CID)))
-        tree.write('./환경부로토스/' + 'excel_new.%d.xml' % int(CID), xml_declaration=True, encoding='utf8')
+            tree.write('./환경부로토스/' + 'Experiment.%d.xml' % int(CID), xml_declaration=True, encoding='utf8')
 
+for i in range(0, 13):
+    try:
+        print(i, "th converting")
+        converting(i)
+    except:
+        pass
 
-for j in range(1, 168):
-    print(j)
-    converting(j)
-    print("-----------------")
-
-# converting(139)
+# converting(11)
