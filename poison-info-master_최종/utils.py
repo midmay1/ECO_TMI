@@ -15,7 +15,7 @@ print(datetime.datetime.now())
 db_folder = './database_sample/'
 
 #1 Database sample
-json_file_name = 'natural-unpd-81372-new-79553_with_MS.json'
+json_file_name = 'MS_all.json'
 
 #2 Database 2
 #json_file_name = 'bioactive-dude-17499-new-16930.json'
