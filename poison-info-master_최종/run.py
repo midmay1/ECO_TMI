@@ -562,6 +562,102 @@ class MyApp(QWidget):
         poison_text = poison_text+ '<br><br>'+ '<p style="font-size: 15px"><b>Ecotoxicity data of 생활화학제품 from various DBs</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
 
         ##########################set poison text module end###################################
+
+        ##########################set poison text module start###################################
+        DBid = 3
+        all_poison_list = utils.load_poison_info(searched_cid, DBid)
+
+        self.info_table.setItem(0, 0, QTableWidgetItem(name))
+        self.info_table.setItem(1, 0, QTableWidgetItem(iupac_name))
+        self.info_table.setItem(2, 0, QTableWidgetItem(', '.join(cas)))
+        self.info_table.setItem(3, 0, QTableWidgetItem(smiles))
+        self.info_table.resizeColumnsToContents()
+
+        ### related to poison grid ###
+        if not self.species_all.isChecked() \
+                and not self.species_btn1.isChecked() \
+                and not self.species_btn2.isChecked() \
+                and not self.species_btn3.isChecked() \
+                and not self.species_btn4.isChecked() \
+                and not self.species_others.isChecked():
+            self.species_all.setChecked(True)
+
+        if not self.ep_all.isChecked() \
+                and not self.ep_lc_btn.isChecked() \
+                and not self.ep_ec_btn.isChecked() \
+                and not self.ep_others.isChecked():
+            self.ep_all.setChecked(True)
+
+        filtered_poison_list = []
+
+        if self.species_all.isChecked() and self.ep_all.isChecked():
+            filtered_poison_list = all_poison_list
+        elif self.species_all.isChecked() and not self.ep_all.isChecked():
+            if self.ep_lc_btn.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'LC50' in p]
+            if self.ep_ec_btn.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'EC50' in p]
+            if self.ep_others.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if not 'LC50' in p and not 'EC50' in p]
+        elif not self.species_all.isChecked() and self.ep_all.isChecked():
+            if self.species_btn1.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'zebra fish' in p.lower() or \
+                                         'zebrafish' in p.lower() or \
+                                         'danio rerio' in p.lower()]
+            if self.species_btn2.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'fathead minnow' in p.lower() or \
+                                         'pimephales promelas' in p.lower()]
+            if self.species_btn3.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'medaka' in p.lower() or \
+                                         'oryzias latipes' in p.lower()]
+            if self.species_btn4.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'daphnia' in p.lower()]
+            if self.species_others.isChecked():
+                filtered_poison_list += [p for p in all_poison_list if 'zebra fish' not in p.lower() and \
+                                         'zebrafish' not in p.lower() and \
+                                         'danio rerio' not in p.lower() and \
+                                         'fathead minnow' not in p.lower() and \
+                                         'pimephales promelas' not in p.lower() and \
+                                         'medaka' not in p.lower() and \
+                                         'oryzias latipes' not in p.lower() and \
+                                         'daphnia' not in p.lower()]
+        else:
+            ep_filtered_poison_list = []
+            if self.ep_lc_btn.isChecked():
+                ep_filtered_poison_list += [p for p in all_poison_list if 'LC50' in p]
+            if self.ep_ec_btn.isChecked():
+                ep_filtered_poison_list += [p for p in all_poison_list if 'EC50' in p]
+            if self.ep_others.isChecked():
+                ep_filtered_poison_list += [p for p in all_poison_list if not 'LC50' in p and not 'EC50' in p]
+
+            if self.species_btn1.isChecked():
+                filtered_poison_list += [p for p in ep_filtered_poison_list if 'zebra fish' in p.lower() or \
+                                         'zebrafish' in p.lower() or \
+                                         'danio rerio' in p.lower()]
+            if self.species_btn2.isChecked():
+                filtered_poison_list += [p for p in ep_filtered_poison_list if 'fathead minnow' in p.lower() or \
+                                         'pimephales promelas' in p.lower()]
+            if self.species_btn3.isChecked():
+                filtered_poison_list += [p for p in ep_filtered_poison_list if 'medaka' in p.lower() or \
+                                         'oryzias latipes' in p.lower()]
+            if self.species_btn4.isChecked():
+                filtered_poison_list += [p for p in ep_filtered_poison_list if 'daphnia' in p.lower()]
+            if self.species_others.isChecked():
+                filtered_poison_list += [p for p in ep_filtered_poison_list if 'zebra fish' not in p.lower() and \
+                                         'zebrafish' not in p.lower() and \
+                                         'danio rerio' not in p.lower() and \
+                                         'fathead minnow' not in p.lower() and \
+                                         'pimephales promelas' not in p.lower() and \
+                                         'medaka' not in p.lower() and \
+                                         'oryzias latipes' not in p.lower() and \
+                                         'daphnia' not in p.lower()]
+
+        filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  ' + f for f in filtered_poison_list]
+        poison_text = poison_text + '<br><br>' + '<p style="font-size: 15px"><b>Ecotoxicity data from experiments 안전성평가연구소 </b></p>' + '<br>' + '<br><br>'.join(
+            filtered_poison_list)
+
+        ##########################set poison text module end###################################
+
         self.poison_text.setText(poison_text)
         
         ### related to mass grid ###
