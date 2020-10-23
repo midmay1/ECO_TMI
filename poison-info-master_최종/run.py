@@ -719,7 +719,7 @@ class MyApp(QWidget):
             self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
-            self.mass_layout.addWidget(self.save_print_group)
+           # self.mass_layout.addWidget(self.save_print_group)
             
             self.reference_line.setText('')            
             QMessageBox.about(self, "Error", "There is no database corresponding to the {} in the mass spectrum DB".format(smiles))
