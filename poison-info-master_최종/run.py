@@ -40,11 +40,11 @@ class MyApp(QWidget):
         self.poison_grid = self._create_poison_grid()
         self.mass_grid, self.mass_layout = self._create_mass_grid()
 
-#        self.metadata_grid = self._create_mass_metadata_grid()
+        self.metadata_grid = self._create_mass_metadata_grid()
 
         right_grid.addWidget(self.poison_grid)
         right_grid.addWidget(self.mass_grid)
-#        right_grid.addWidget(self.metadata_grid)
+        right_grid.addWidget(self.metadata_grid)
                 
 #        grid.addLayout(left_grid, 0, 0, 1, 1)
 #        grid.addLayout(right_grid, 0, 1, 1, 3)
@@ -158,7 +158,7 @@ class MyApp(QWidget):
 #        self.info_table.verticalHeaderItem().setBackground('color : red')
         self.info_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
-        print(self.info_table.size())
+#        print(self.info_table.size())
 
         vbox = QVBoxLayout()
         vbox.addWidget(self.info_table)
@@ -240,6 +240,8 @@ class MyApp(QWidget):
         mass_layout = QVBoxLayout()
                 
         self.mass_fig = plt.Figure(figsize=(50,50))
+
+#        self.mass_fig = plt.Figure()
         self.mass_canvas = FigureCanvas(self.mass_fig)
         
         self.mass_fig.clear()
@@ -255,8 +257,8 @@ class MyApp(QWidget):
         self.reference_line.setReadOnly(True)
 
         # (Added) Create mass info
-        self.mass_info_group = QGroupBox('')
-        mass_info_layout = QHBoxLayout()
+#        self.mass_info_group = QGroupBox('')
+#        mass_info_layout = QHBoxLayout()
 
         # Create save and print button
 #        self.save_print_group = QGroupBox('')
@@ -276,10 +278,10 @@ class MyApp(QWidget):
 #        save_print_layout.addWidget(print_btn)
 #        self.save_print_group.setLayout(save_print_layout)
 
-        self.mass_info_grid = self._create_mass_metadata_grid()
-        mass_info_layout.addWidget(self.mass_info_grid)
+#        self.mass_info_grid = self._create_mass_metadata_grid()
+#        mass_info_layout.addWidget(self.mass_info_grid)
 
-        self.mass_info_group.setLayout(mass_info_layout)
+#        self.mass_info_group.setLayout(mass_info_layout)
 
         mass_layout.addWidget(self.mass_canvas)
         mass_layout.addWidget(self.reference_line)
@@ -496,12 +498,6 @@ class MyApp(QWidget):
         DBid = 2
         all_poison_list = utils.load_poison_info(searched_cid, DBid)
 
-        self.info_table.setItem(0, 0, QTableWidgetItem(name))
-        self.info_table.setItem(1, 0, QTableWidgetItem(iupac_name))
-        self.info_table.setItem(2, 0, QTableWidgetItem(', '.join(cas)))
-        self.info_table.setItem(3, 0, QTableWidgetItem(smiles))
-        self.info_table.resizeColumnsToContents()
-
         ### related to poison grid ###
         if not self.species_all.isChecked() \
                 and not self.species_btn1.isChecked() \
@@ -589,12 +585,6 @@ class MyApp(QWidget):
         ##########################set poison text module start###################################
         DBid = 3
         all_poison_list = utils.load_poison_info(searched_cid, DBid)
-
-        self.info_table.setItem(0, 0, QTableWidgetItem(name))
-        self.info_table.setItem(1, 0, QTableWidgetItem(iupac_name))
-        self.info_table.setItem(2, 0, QTableWidgetItem(', '.join(cas)))
-        self.info_table.setItem(3, 0, QTableWidgetItem(smiles))
-        self.info_table.resizeColumnsToContents()
 
         ### related to poison grid ###
         if not self.species_all.isChecked() \
@@ -699,18 +689,18 @@ class MyApp(QWidget):
             self.reference_line.setText(reference)
 
             # (Added) Set Item and Label of msinfo_table
-#            idx_ms = 0
-#            self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
+            idx_ms = 0
+            self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
 
-#            for ms_dict in self.msms_db[smiles][0]['metaData']:
-#                self.header_list.append(ms_dict['name'])
-#                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
-#                idx_ms += 1
-#            self.msinfo_table.setVerticalHeaderLabels(self.header_list)
+            for ms_dict in self.msms_db[smiles][0]['metaData']:
+                self.header_list.append(ms_dict['name'])
+                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
+                idx_ms += 1
+            self.msinfo_table.setVerticalHeaderLabels(self.header_list)
 
-#            self.msinfo_table.setStyleSheet("Color : black")
+            self.msinfo_table.setStyleSheet("Color : black")
 
-#            self.msinfo_table.resizeColumnsToContents()
+            self.msinfo_table.resizeColumnsToContents()
 
             self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
@@ -729,8 +719,9 @@ class MyApp(QWidget):
             self.mass_canvas.draw()
 
             # (Added) Clear Table
-#            self.msinfo_table.clear()
-#            self.msinfo_table.setRowCount(4)
+            self.msinfo_table.clear()
+            self.msinfo_table.setRowCount(8)
+            self.msinfo_table.setVerticalHeaderLabels(["                                      ", " ", " ", " ", " ", " ", " ", " "])
 #            self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
 
             self.mass_canvas = FigureCanvas(self.mass_fig)
