@@ -55,6 +55,7 @@ class MyApp(QWidget):
         ## (Added) Fix the left grid #################
         grid.setColumnStretch(0, 0.1)
         grid.setColumnStretch(1, 2)
+#        right_grid.setRowStretch(1,0.1)
         ##############################################
 #        self.setGeometry(300,300,500,500)
 #        self.resize(1100,1100)
