@@ -138,7 +138,9 @@ class MyApp(QWidget):
         self.info_table.setRowCount(4)
         self.info_table.setVerticalHeaderLabels(["Name", "IUPAC name", "CAS number", "SMILES"])
         self.info_table.setEditTriggers(QTableWidget.NoEditTriggers)
-        
+
+        print(self.info_table.size())
+
         vbox = QVBoxLayout()
         vbox.addWidget(self.info_table)
         groupbox.setLayout(vbox)
@@ -148,8 +150,8 @@ class MyApp(QWidget):
         self.info_table.setRowHeight(2,groupbox.height()/16)
         self.info_table.setRowHeight(3,groupbox.height()/16)
 #        self.info_table.setColumnWidth(0, 300)
-        QTableWidget.setMinimumSize(self.info_table, 357, groupbox.height()/4)
-        QTableWidget.setFixedSize(self.info_table,357,groupbox.height()/4)
+        QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
+        QTableWidget.setFixedSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
 
         vbox.addStretch(0.001)
 
