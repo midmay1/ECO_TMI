@@ -1,16 +1,18 @@
 import os
-import utils
-import matplotlib.pyplot as plt
 from functools import partial
+
+import matplotlib.pyplot as plt
+import numpy as np
+import utils
+from PyQt5.Qt import QFileInfo
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
 from PyQt5.QtWidgets import (QWidget, QDesktopWidget, QGroupBox, QGridLayout, QVBoxLayout, QHBoxLayout,
-                             QLineEdit, QTextEdit, QRadioButton, QPushButton,
+                             QLineEdit, QTextEdit, QPushButton,
                              QTableWidget, QTableWidgetItem, QCheckBox, QComboBox, QMessageBox,
                              QFileDialog)
-from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
-from PyQt5.QtGui import QTextCursor
-from PyQt5.Qt import QFileInfo
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-import numpy as np
+
 
 class MyApp(QWidget):
     def __init__(self):
@@ -151,7 +153,7 @@ class MyApp(QWidget):
         self.info_table.setRowHeight(3,groupbox.height()/16)
 #        self.info_table.setColumnWidth(0, 300)
         QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
-        QTableWidget.setFixedSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
+#        QTableWidget.setFixedSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
 
         vbox.addStretch(0.001)
 

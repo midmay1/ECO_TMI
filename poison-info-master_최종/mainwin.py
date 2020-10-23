@@ -1,10 +1,9 @@
-import os
-import run
-import sys
 from functools import partial
-from PyQt5.QtWidgets import QWidget, QMainWindow, QAction, qApp, QMessageBox
+
+import run
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QMessageBox
+
 
 class MyMain(QMainWindow):
     def __init__(self):
@@ -58,7 +57,7 @@ class MyMain(QMainWindow):
 #        self.toolbar.addAction(printAction)
 
 #        self.setWindowTitle('Toxicity-Mass Database')
-        self.setGeometry(300, 300, 1100, 697.5)
+        self.setGeometry(300, 300, 1100, 1000)
 #        self.setMinimumSize(self,1100, 697.5)
 #        self.resize(1100,697.5)
         self.setWindowTitle('TOXMASS 1.0')
