@@ -128,6 +128,27 @@ def load_poison_info(searched_cid,DBid):
         toxic_app= ["NO DATA\n"]
 
     return toxic_app
+    ##### read experiment files
+   if DBid == 3 :
+    try:
+        xml_file = os.path.join(db_folder, 'PUBCHEM', 'XML',
+                            'Experiment.{}.xml'.format(searched_cid))
+
+        xml_data = ET.parse(xml_file).getroot()
+        str_data = ET.tostring(xml_data, encoding='utf8').decode('utf8')
+
+        start_str = '<Toxicty>'
+        end_str = start_str.replace('T', '/T')
+        regex = re.compile(r'{}.*{}'.format(start_str, end_str))
+
+        toxic_app = regex.findall(str_data)
+        toxic_app = [html.unescape(i.replace(start_str, '').replace(end_str, '')) for i in toxic_app]
+
+    except:
+        print("NO experiment DATA")
+        toxic_app= ["NO DATA\n"]
+
+    return toxic_app
 
 def plot_mass(ax, mz_array, intensity_array):
     mz_array = np.array(mz_array)
