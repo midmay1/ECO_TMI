@@ -39,17 +39,25 @@ class MyApp(QWidget):
         right_grid = QGridLayout()
         self.poison_grid = self._create_poison_grid()
         self.mass_grid, self.mass_layout = self._create_mass_grid()
+
+#        self.metadata_grid = self._create_mass_metadata_grid()
+
         right_grid.addWidget(self.poison_grid)
         right_grid.addWidget(self.mass_grid)
+#        right_grid.addWidget(self.metadata_grid)
                 
-        grid.addLayout(left_grid, 0, 0, 1, 1)
-        grid.addLayout(right_grid, 0, 1, 1, 3)
+#        grid.addLayout(left_grid, 0, 0, 1, 1)
+#        grid.addLayout(right_grid, 0, 1, 1, 3)
+
+        grid.addLayout(left_grid, 0,0)
+        grid.addLayout(right_grid, 0,1)
 
         ## (Added) Fix the left grid #################
         grid.setColumnStretch(0, 0.1)
         grid.setColumnStretch(1, 2)
         ##############################################
-
+#        self.setGeometry(300,300,500,500)
+#        self.resize(1100,1100)
         self.setWindowTitle('TOXMASS 1.0')
         self.setLayout(grid)
         self.center()
@@ -137,8 +145,17 @@ class MyApp(QWidget):
         self.info_table = QTableWidget()
         self.info_table.setColumnCount(1)
         self.info_table.horizontalHeader().setVisible(False)
+#        self.info_table.horizontalHeader().setHighlightSections(1.0)
+#        self.info_table.horizontalHeader().setStyleSheet('border : 1px solid black')
+#        self.info_table.horizontalHeader().setStyleSheet('color : green')
         self.info_table.setRowCount(4)
         self.info_table.setVerticalHeaderLabels(["Name", "IUPAC name", "CAS number", "SMILES"])
+#        self.info_table.setStyleSheet('gridline-color : gray')
+        self.info_table.verticalHeader().setStyleSheet('gridline-color : gray')
+#        self.info_table.verticalHeader().setStyleSheet('color : green')
+#        self.info_table.verticalHeader().setStyleSheet('color : solid black')
+#        self.info_table.verticalHeader().setStyleSheet('border-bottom: 1px solid')
+#        self.info_table.verticalHeaderItem().setBackground('color : red')
         self.info_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
         print(self.info_table.size())
@@ -153,7 +170,7 @@ class MyApp(QWidget):
         self.info_table.setRowHeight(3,groupbox.height()/16)
 #        self.info_table.setColumnWidth(0, 300)
         QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
-#        QTableWidget.setFixedSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
+        QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
 
         vbox.addStretch(0.001)
 
@@ -208,6 +225,8 @@ class MyApp(QWidget):
 
         self.msinfo_table.setColumnWidth(0,3000)
 
+        self.msinfo_table.setEditTriggers(QTableWidget.NoEditTriggers)
+
         vbox = QVBoxLayout()
         vbox.addWidget(self.msinfo_table)
         groupbox.setLayout(vbox)
@@ -220,7 +239,7 @@ class MyApp(QWidget):
         
         mass_layout = QVBoxLayout()
                 
-        self.mass_fig = plt.Figure()
+        self.mass_fig = plt.Figure(figsize=(50,50))
         self.mass_canvas = FigureCanvas(self.mass_fig)
         
         self.mass_fig.clear()
@@ -666,6 +685,7 @@ class MyApp(QWidget):
         
         ### related to mass grid ###
         try:
+            #print(smiles)
             searched_msms_data = self.msms_db[smiles][0]['spectrum']
             self.mz_array = [float(d.split(':')[0]) for d in searched_msms_data.split(' ')]
             self.intensity_array = [float(d.split(':')[1]) for d in searched_msms_data.split(' ')]

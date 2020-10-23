@@ -57,9 +57,11 @@ class MyMain(QMainWindow):
 #        self.toolbar.addAction(printAction)
 
 #        self.setWindowTitle('Toxicity-Mass Database')
-        self.setGeometry(300, 300, 1100, 1000)
+        self.setGeometry(300, 300, 500, 500)
 #        self.setMinimumSize(self,1100, 697.5)
-#        self.resize(1100,697.5)
+        self.resize(2100,1100)
+
+
         self.setWindowTitle('TOXMASS 1.0')
         self.show()
 
