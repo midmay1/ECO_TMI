@@ -283,7 +283,7 @@ class MyApp(QWidget):
 
         mass_layout.addWidget(self.mass_canvas)
         mass_layout.addWidget(self.reference_line)
-        mass_layout.addWidget(self.mass_info_group)
+ #       mass_layout.addWidget(self.mass_info_group)
  #       mass_layout.addWidget(self.save_print_group)
         groupbox.setLayout(mass_layout)
         
@@ -699,23 +699,23 @@ class MyApp(QWidget):
             self.reference_line.setText(reference)
 
             # (Added) Set Item and Label of msinfo_table
-            idx_ms = 0
-            self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
+#            idx_ms = 0
+#            self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
 
-            for ms_dict in self.msms_db[smiles][0]['metaData']:
-                self.header_list.append(ms_dict['name'])
-                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
-                idx_ms += 1
-            self.msinfo_table.setVerticalHeaderLabels(self.header_list)
+#            for ms_dict in self.msms_db[smiles][0]['metaData']:
+#                self.header_list.append(ms_dict['name'])
+#                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
+#                idx_ms += 1
+#            self.msinfo_table.setVerticalHeaderLabels(self.header_list)
 
-            self.msinfo_table.setStyleSheet("Color : black")
+#            self.msinfo_table.setStyleSheet("Color : black")
 
-            self.msinfo_table.resizeColumnsToContents()
+#            self.msinfo_table.resizeColumnsToContents()
 
             self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
-            self.mass_layout.addWidget(self.mass_info_group)
+#            self.mass_layout.addWidget(self.mass_info_group)
             self.mass_grid.setLayout(self.mass_layout)
             self.mass_canvas.show()
 
@@ -729,9 +729,9 @@ class MyApp(QWidget):
             self.mass_canvas.draw()
 
             # (Added) Clear Table
-            self.msinfo_table.clear()
-            self.msinfo_table.setRowCount(4)
-            self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
+#            self.msinfo_table.clear()
+#            self.msinfo_table.setRowCount(4)
+#            self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
 
             self.mass_canvas = FigureCanvas(self.mass_fig)
             self.reference_line.setText('')
