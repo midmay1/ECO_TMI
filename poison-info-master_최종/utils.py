@@ -137,7 +137,7 @@ def load_poison_info(searched_cid,DBid):
         xml_data = ET.parse(xml_file).getroot()
         str_data = ET.tostring(xml_data, encoding='utf8').decode('utf8')
 
-        start_str = '<Toxicty>'
+        start_str = '<Toxicity>'
         end_str = start_str.replace('T', '/T')
         regex = re.compile(r'{}.*{}'.format(start_str, end_str))
 
