@@ -183,6 +183,32 @@ class MyApp(QWidget):
         groupbox.setLayout(vbox)
 
         return groupbox
+
+    # (Added) Create mass metadata grid
+    def _create_mass_metadata_grid(self):
+        groupbox = QGroupBox('')
+        self.msinfo_table = QTableWidget()
+        self.msinfo_table.setColumnCount(1)
+        self.msinfo_table.horizontalHeader().setVisible(False)
+        self.msinfo_table.setRowCount(8)
+
+        self.msinfo_table.setVerticalHeaderLabels(["                                      "," "," "," "," "," "," "," "])
+
+#        self.msinfo_table.setStyleSheet("Color : Whitegray")
+
+
+        self.header_list = []
+#        self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
+
+
+
+        self.msinfo_table.setColumnWidth(0,3000)
+
+        vbox = QVBoxLayout()
+        vbox.addWidget(self.msinfo_table)
+        groupbox.setLayout(vbox)
+
+        return groupbox
     
     # 2.4 Create mass grid
     def _create_mass_grid(self):
@@ -204,7 +230,11 @@ class MyApp(QWidget):
         # Create reference line
         self.reference_line = QLineEdit('')
         self.reference_line.setReadOnly(True)
-        
+
+        # (Added) Create mass info
+        self.mass_info_group = QGroupBox('')
+        mass_info_layout = QHBoxLayout()
+
         # Create save and print button
 #        self.save_print_group = QGroupBox('')
 #        save_print_layout = QHBoxLayout()
@@ -223,8 +253,14 @@ class MyApp(QWidget):
 #        save_print_layout.addWidget(print_btn)
 #        self.save_print_group.setLayout(save_print_layout)
 
+        self.mass_info_grid = self._create_mass_metadata_grid()
+        mass_info_layout.addWidget(self.mass_info_grid)
+
+        self.mass_info_group.setLayout(mass_info_layout)
+
         mass_layout.addWidget(self.mass_canvas)
         mass_layout.addWidget(self.reference_line)
+        mass_layout.addWidget(self.mass_info_group)
  #       mass_layout.addWidget(self.save_print_group)
         groupbox.setLayout(mass_layout)
         
@@ -541,6 +577,28 @@ class MyApp(QWidget):
             
             reference = self.msms_db[smiles][0]['library']['link']
             self.reference_line.setText(reference)
+
+            # (Added) Set Item and Label of msinfo_table
+            idx_ms = 0
+            self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
+
+            for ms_dict in self.msms_db[smiles][0]['metaData']:
+                self.header_list.append(ms_dict['name'])
+                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
+                idx_ms += 1
+            self.msinfo_table.setVerticalHeaderLabels(self.header_list)
+
+            self.msinfo_table.setStyleSheet("Color : black")
+
+            self.msinfo_table.resizeColumnsToContents()
+
+            self.mass_canvas.draw()
+            self.mass_layout.addWidget(self.mass_canvas)
+            self.mass_layout.addWidget(self.reference_line)
+            self.mass_layout.addWidget(self.mass_info_group)
+            self.mass_grid.setLayout(self.mass_layout)
+            self.mass_canvas.show()
+
         except:
             self.mass_fig.clear()
             ax = self.mass_fig.add_subplot(111)
@@ -549,6 +607,19 @@ class MyApp(QWidget):
             ax.set_ylabel('Intensity')
             plt.tight_layout()
             self.mass_canvas.draw()
+
+            # (Added) Clear Table
+            self.msinfo_table.clear()
+            self.msinfo_table.setRowCount(4)
+            self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
+
+            self.mass_canvas = FigureCanvas(self.mass_fig)
+            self.reference_line.setText('')
+
+            self.mass_canvas.draw()
+            self.mass_layout.addWidget(self.mass_canvas)
+            self.mass_layout.addWidget(self.reference_line)
+            self.mass_layout.addWidget(self.save_print_group)
             
             self.reference_line.setText('')            
             QMessageBox.about(self, "Error", "There is no database corresponding to the {} in the mass spectrum DB".format(smiles))
