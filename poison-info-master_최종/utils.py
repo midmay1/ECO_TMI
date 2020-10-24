@@ -163,13 +163,16 @@ def plot_mass(ax, mz_array, intensity_array):
     top_intensity_array = intensity_array[top_idx]
         
     for m, i in list(zip(top_mz_array, top_intensity_array)):
-        ax.text(m, i+.5, s=round(m, 2), horizontalalignment='center', verticalalignment='bottom', fontsize=8)
+        ax.text(m, i+.5, s=round(m, 2), horizontalalignment='center', verticalalignment='bottom', fontsize=12)
     
     ax.set_ylim([-1.0, 109.5])
 
     ax.set_xlabel('m/z')
     ax.set_ylabel('Intensity')
+
+#    ax.set_xticklabels('m/z', fontsize=12)
     
     plt.tight_layout()
+#    plt.xticks(fontsize=20)
     
     return ax

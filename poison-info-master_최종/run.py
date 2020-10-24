@@ -8,7 +8,7 @@ from PyQt5.Qt import QFileInfo
 from PyQt5.QtGui import QTextCursor
 from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
 from PyQt5.QtWidgets import (QWidget, QDesktopWidget, QGroupBox, QGridLayout, QVBoxLayout, QHBoxLayout,
-                             QLineEdit, QTextEdit, QPushButton,
+                             QLineEdit, QTextEdit, QPushButton, QScrollArea,
                              QTableWidget, QTableWidgetItem, QCheckBox, QComboBox, QMessageBox,
                              QFileDialog)
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
@@ -26,10 +26,10 @@ class MyApp(QWidget):
         
     ### 2. UI initialization ###
     def initUI(self):
-        # The whole grid
+        # The whole grid = left + right
         grid = QGridLayout()
 
-        # The left grid
+        # The left grid = search + info + action
         left_grid = QGridLayout()
         self.search_grid = self._create_search_grid()
         self.info_grid = self._create_info_grid()
@@ -38,7 +38,7 @@ class MyApp(QWidget):
         left_grid.addWidget(self.info_grid)
         left_grid.addWidget(self.action_grid)
 
-        # The right grid
+        # The right grid = poison + mass + metadata
         right_grid = QGridLayout()
         self.poison_grid = self._create_poison_grid()
         self.mass_grid, self.mass_layout = self._create_mass_grid()
@@ -46,14 +46,15 @@ class MyApp(QWidget):
         right_grid.addWidget(self.poison_grid)
         right_grid.addWidget(self.mass_grid)
         right_grid.addWidget(self.metadata_grid)
-                
+
+        # Grid merging
         grid.addLayout(left_grid, 0, 0, 1, 1)
         grid.addLayout(right_grid, 0, 1, 1, 3)
 #       grid.addLayout(left_grid, 0,0)
 #       grid.addLayout(right_grid, 0,1)
 
-        # (Added) Stretching factors
-        grid.setColumnStretch(0, 0.1)
+        # Stretching factors
+        grid.setColumnStretch(0, 1)
         grid.setColumnStretch(1, 2)
 
 #       right_grid.setRowStretch(1,0.1)
@@ -77,15 +78,15 @@ class MyApp(QWidget):
         # Search layout
         search_group = QGroupBox('Search')
         search_layout = QHBoxLayout()
-        
+
+        # search_type_list = CAS, IUPAC, SMILES
         self.search_type_list = QComboBox()
         self.search_type_list.addItem('CAS')
         self.search_type_list.addItem('IUPAC')
         self.search_type_list.addItem('SMILES')
-        
+
         search_btn = QPushButton('Search')
         search_btn.clicked.connect(self.search_btn_click_event)  # Refer to 2.1.3 function
-
         self.search_line = QLineEdit('')
         self.search_line.resize(self.search_line.sizeHint())
         self.search_line.returnPressed.connect(search_btn.click)  # Refer to 2.1.3 function
@@ -106,7 +107,7 @@ class MyApp(QWidget):
         self.species_btn3 = QCheckBox('medaka')
         self.species_btn4 = QCheckBox('daphnia')
         self.species_others = QCheckBox('others')
-        
+
         species_layout.addWidget(self.species_all)
         species_layout.addWidget(self.species_btn1)
         species_layout.addWidget(self.species_btn2)
@@ -124,7 +125,7 @@ class MyApp(QWidget):
         self.ep_lc_btn = QCheckBox('LC50')
         self.ep_ec_btn = QCheckBox('EC50')
         self.ep_others = QCheckBox('others')
-        
+
         endpoint_layout.addWidget(self.ep_all)
         endpoint_layout.addWidget(self.ep_lc_btn)
         endpoint_layout.addWidget(self.ep_ec_btn)
@@ -143,7 +144,7 @@ class MyApp(QWidget):
     def _create_info_grid(self):
         groupbox = QGroupBox('Chemical Information')
 
-        # Chemical info gird
+        # Chemical info table
         self.info_table = QTableWidget()
         self.info_table.setColumnCount(1)
         self.info_table.horizontalHeader().setVisible(False)
@@ -152,39 +153,66 @@ class MyApp(QWidget):
         self.info_table.verticalHeader().setStyleSheet('gridline-color : gray')
         self.info_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
+#        self.info_table.setHorizontalScrollMode(QAbstractItemView_ScrollMode=ScrollPerPixel')
+
+#        self.info_table.scrollToItem()
+#        self.info_table.horizontalScrollBar()
+
+#        self.info_table.hasAutoScroll()
+
+
+
         vbox = QVBoxLayout()
+
+#        scroll = QScrollArea()
+#        scroll.setWidget(self.info_table)
+#        vbox.addWidget(scroll)
+
+
+
         vbox.addWidget(self.info_table)
+
         groupbox.setLayout(vbox)
 
+
+#        scrollarea = QScrollArea(vbox)
+
+
+
+#        self.info_table.setColumnWidth(0,groupbox.width()*2)
+
+        # Regulatinig table
         self.info_table.setRowHeight(0,groupbox.height()/16)
         self.info_table.setRowHeight(1,groupbox.height()/16)
         self.info_table.setRowHeight(2,groupbox.height()/16)
         self.info_table.setRowHeight(3,groupbox.height()/16)
-
         QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
-        QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
-
+#        QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
+        QTableWidget.setFixedHeight(self.info_table, groupbox.height()*4/10)
         vbox.addStretch(0.001)
+
+
 
         return groupbox
 
+    # 2.3 Create action grid
     def _create_action_grid(self):
         groupbox = QGroupBox(' ')
 
         action_layout = QHBoxLayout()
-#
+
+        # Save, print buttons
         save_btn = QPushButton('Save')
         save_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='save'))  # Refer to 2.4.1 function
-#
         print_btn = QPushButton('Print')
         print_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='print'))  # Refer to 2.4.1 function
-#
+
         action_layout.addWidget(save_btn)
         action_layout.addWidget(print_btn)
         groupbox.setLayout(action_layout)
         return groupbox
     
-    # 2.3 Create poison grid
+    # 2.4 Create poison grid
     def _create_poison_grid(self):
         groupbox = QGroupBox('')
         
@@ -197,17 +225,18 @@ class MyApp(QWidget):
 
         return groupbox
 
-    # (Added) Create mass metadata grid
+    # 2.5 Create mass metadata grid
     def _create_mass_metadata_grid(self):
         groupbox = QGroupBox('')
+
+        # Mass metadata table
         self.msinfo_table = QTableWidget()
         self.msinfo_table.setColumnCount(1)
         self.msinfo_table.horizontalHeader().setVisible(False)
-        self.msinfo_table.setRowCount(8)
-
-        self.msinfo_table.setVerticalHeaderLabels(["                                      "," "," "," "," "," "," "," "])
+        self.msinfo_table.setRowCount(20)
+        self.msinfo_table.setVerticalHeaderLabels(["                                      "," "," "," "," "," "," "," ",
+                                                   " "," "," "," "," "," "," "," "," "," "," "," "])
         self.header_list = []
-
         self.msinfo_table.setColumnWidth(0,3000)
         self.msinfo_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
@@ -217,12 +246,13 @@ class MyApp(QWidget):
 
         return groupbox
     
-    # 2.4 Create mass grid
+    # 2.6 Create mass grid
     def _create_mass_grid(self):
         groupbox = QGroupBox('')
         
         mass_layout = QVBoxLayout()
-                
+
+        # Mass spectrum figure
         self.mass_fig = plt.Figure(figsize=(50,50))
 #       self.mass_fig = plt.Figure()
         self.mass_canvas = FigureCanvas(self.mass_fig)
@@ -239,41 +269,49 @@ class MyApp(QWidget):
         self.reference_line = QLineEdit('')
         self.reference_line.setReadOnly(True)
 
-        # (Added) Create mass info
+        mass_layout.addWidget(self.mass_canvas)
+        mass_layout.addWidget(self.reference_line)
+        groupbox.setLayout(mass_layout)
+
+        return groupbox, mass_layout
+
+########################################################################################################################
+#        # (Added) Create mass info
 #        self.mass_info_group = QGroupBox('')
 #        mass_info_layout = QHBoxLayout()
-
-        # Create save and print button
+#
+#        # Create save and print button
 #        self.save_print_group = QGroupBox('')
 #        save_print_layout = QHBoxLayout()
-
+#
 #        info_btn = QPushButton('Info')
 #        info_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='info'))
-
+#
 #        save_btn = QPushButton('Save')
 #        save_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='save'))  # Refer to 2.4.1 function
-
+#
 #        print_btn = QPushButton('Print')
 #        print_btn.clicked.connect(partial(self.file_btn_click_event, clicked_btn='print'))  # Refer to 2.4.1 function
-
+#
 #        save_print_layout.addWidget(info_btn)
 #        save_print_layout.addWidget(save_btn)
 #        save_print_layout.addWidget(print_btn)
 #        self.save_print_group.setLayout(save_print_layout)
-
+#
 #        self.mass_info_grid = self._create_mass_metadata_grid()
 #        mass_info_layout.addWidget(self.mass_info_grid)
-
+#
 #        self.mass_info_group.setLayout(mass_info_layout)
+#
+#        mass_layout.addWidget(self.mass_canvas)
+#        mass_layout.addWidget(self.reference_line)
+#        mass_layout.addWidget(self.mass_info_group)
+#        mass_layout.addWidget(self.save_print_group)
+#        groupbox.setLayout(mass_layout)
+#
+#        return groupbox, mass_layout
+########################################################################################################################
 
-        mass_layout.addWidget(self.mass_canvas)
-        mass_layout.addWidget(self.reference_line)
- #      mass_layout.addWidget(self.mass_info_group)
- #      mass_layout.addWidget(self.save_print_group)
-        groupbox.setLayout(mass_layout)
-        
-        return groupbox, mass_layout
-    
     # 2.1.1 Connect species all button click event
     def species_all_btn_click_event(self):
         if self.species_all.isChecked():
@@ -386,12 +424,19 @@ class MyApp(QWidget):
         ##########################set poison text module start###################################
         DBid = 1
         name, all_poison_list = utils.load_poison_info(searched_cid,DBid)
-                
+
+#        self.info_table.horizontalScrollBar().setValue(0)
         self.info_table.setItem(0, 0, QTableWidgetItem(name))
         self.info_table.setItem(1, 0, QTableWidgetItem(iupac_name))
         self.info_table.setItem(2, 0, QTableWidgetItem(', '.join(cas)))
         self.info_table.setItem(3, 0, QTableWidgetItem(smiles))
         self.info_table.resizeColumnsToContents()
+
+#        self.info_table.scrollToItem()
+
+#        self.info_table.setHorizontalScrollMode('mode : ScrollMode')
+
+#        self.info_table.horizontalScrollBar().setValue(0)
         
         ### related to poison grid ###
         if not self.species_all.isChecked() \
@@ -659,13 +704,15 @@ class MyApp(QWidget):
         ### related to mass grid ###
         try:
             #print(smiles)
+            self.mass_fig.clear()
+
             searched_msms_data = self.msms_db[smiles][0]['spectrum']
             self.mz_array = [float(d.split(':')[0]) for d in searched_msms_data.split(' ')]
             self.intensity_array = [float(d.split(':')[1]) for d in searched_msms_data.split(' ')]
-            
-            self.mass_fig.clear()
+
             ax = self.mass_fig.add_subplot(111)
-            ax = utils.plot_mass(ax, self.mz_array, self.intensity_array)
+#           ax = utils.plot_mass(ax, self.mz_array, self.intensity_array)
+            utils.plot_mass(ax, self.mz_array, self.intensity_array)
             self.mass_canvas.draw()
             
             reference = self.msms_db[smiles][0]['library']['link']
@@ -674,21 +721,18 @@ class MyApp(QWidget):
             # (Added) Set Item and Label of msinfo_table
             idx_ms = 0
             self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
-
             for ms_dict in self.msms_db[smiles][0]['metaData']:
                 self.header_list.append(ms_dict['name'])
                 self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
                 idx_ms += 1
             self.msinfo_table.setVerticalHeaderLabels(self.header_list)
-
             self.msinfo_table.setStyleSheet("Color : black")
-
             self.msinfo_table.resizeColumnsToContents()
 
-            self.mass_canvas.draw()
+#           self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
-#            self.mass_layout.addWidget(self.mass_info_group)
+#           self.mass_layout.addWidget(self.mass_info_group)
             self.mass_grid.setLayout(self.mass_layout)
             self.mass_canvas.show()
 
@@ -703,17 +747,19 @@ class MyApp(QWidget):
 
             # (Added) Clear Table
             self.msinfo_table.clear()
-            self.msinfo_table.setRowCount(8)
-            self.msinfo_table.setVerticalHeaderLabels(["                                      ", " ", " ", " ", " ", " ", " ", " "])
-#            self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
+            self.msinfo_table.setRowCount(20)
+            self.msinfo_table.setVerticalHeaderLabels(["                                      "," "," "," "," "," "," ",
+                                                       " "," "," "," "," "," "," "," "," "," "," "," "," "])
+            self.msinfo_table.setColumnWidth(0,3000)
+#           self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
 
-            self.mass_canvas = FigureCanvas(self.mass_fig)
+#           self.mass_canvas = FigureCanvas(self.mass_fig)
             self.reference_line.setText('')
 
-            self.mass_canvas.draw()
+#           self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
-           # self.mass_layout.addWidget(self.save_print_group)
+#           self.mass_layout.addWidget(self.save_print_group)
             
             self.reference_line.setText('')            
             QMessageBox.about(self, "Error", "There is no database corresponding to the {} in the mass spectrum DB".format(smiles))
