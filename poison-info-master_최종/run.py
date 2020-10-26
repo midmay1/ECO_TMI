@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import (QWidget, QDesktopWidget, QGroupBox, QGridLayout, QV
                              QTableWidget, QTableWidgetItem, QCheckBox, QComboBox, QMessageBox,
                              QFileDialog)
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-
+from PIL import Image
 
 class MyApp(QWidget):
     def __init__(self):
@@ -219,6 +219,9 @@ class MyApp(QWidget):
         self.poison_text = QTextEdit('')
         self.poison_text.setReadOnly(True)
         
+        self.meta_all = QTextEdit('')
+        self.meta_all.setReadOnly(True)
+
         vbox = QVBoxLayout()
         vbox.addWidget(self.poison_text)
         groupbox.setLayout(vbox)
@@ -254,15 +257,19 @@ class MyApp(QWidget):
 
         # Mass spectrum figure
         self.mass_fig = plt.Figure(figsize=(50,50))
-#       self.mass_fig = plt.Figure()
+#        self.mass_fig = plt.Figure()
         self.mass_canvas = FigureCanvas(self.mass_fig)
         
         self.mass_fig.clear()
         ax = self.mass_fig.add_subplot(111)
         ax.set_yticks([0, 20, 40, 60, 80, 100])
-        ax.set_xlabel('m/z')
-        ax.set_ylabel('Intensity')
+        ax.tick_params(axis='y', labelsize=15)
+        ax.tick_params(axis='x', labelsize=15)
+#       ax.set_yticklabels([0, 20, 40, 60, 80, 100], rotation=0, fontsize="medium")
+        ax.set_xlabel('m/z', fontsize='xx-large')
+        ax.set_ylabel('Intensity', fontsize='xx-large')
         plt.tight_layout()
+
         self.mass_canvas.draw()
         
         # Create reference line
@@ -721,10 +728,27 @@ class MyApp(QWidget):
             # (Added) Set Item and Label of msinfo_table
             idx_ms = 0
             self.msinfo_table.setRowCount(len(self.msms_db[smiles][0]['metaData']))
+            meta_n=[]
+            meta_v=[]
             for ms_dict in self.msms_db[smiles][0]['metaData']:
                 self.header_list.append(ms_dict['name'])
-                self.msinfo_table.setItem(idx_ms, 0, QTableWidgetItem(str(ms_dict['value'])))
-                idx_ms += 1
+                meta_n.append(ms_dict['name'])
+                self.msinfo_table.setItem(idx_ms,0,QTableWidgetItem(str(ms_dict['value'])))
+                meta_v.append(ms_dict['value'])
+                idx_ms +=1
+            meta=str()
+            meta_all=str()
+            meta_all="[MS spectrum metadata]\n\n"
+
+            for i in range (0,len(meta_n)):
+                meta="►{} \n  :       {}".format(meta_n[i],meta_v[i])
+                meta_all+='{}\n'.format(meta)
+            print(meta_all)
+            self.meta_all.setText(meta_all)
+            print("up", meta_n)
+            print("up", meta_v)
+
+
             self.msinfo_table.setVerticalHeaderLabels(self.header_list)
             self.msinfo_table.setStyleSheet("Color : black")
             self.msinfo_table.resizeColumnsToContents()
@@ -753,9 +777,9 @@ class MyApp(QWidget):
             self.msinfo_table.setColumnWidth(0,3000)
 #           self.msinfo_table.setVerticalHeaderLabels(["              ", " ", " ", " "])
 
-#           self.mass_canvas = FigureCanvas(self.mass_fig)
             self.reference_line.setText('')
 
+            #           self.mass_canvas = FigureCanvas(self.mass_fig)
 #           self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
@@ -812,13 +836,23 @@ class MyApp(QWidget):
         
         # toxic information
         poison_text = self.poison_text.toPlainText()
-        
+        meta_all=self.meta_all.toPlainText()
+
         # mass spectrum
         try:
             self.msms_db[smiles]
-            self.mass_fig.savefig('mass_fig.png',
-                                  dpi=100,
-                                  bbox_inches='tight')
+
+            fig = self.mass_fig
+            fig.set_size_inches(12.5, 7.0)
+            fig.savefig('mass_fig.png', dpi=100)
+
+
+
+#            self.mass_fig.savefig('mass_fig.png',
+#                                  dpi=100,
+#                                  papertype='a4')
+#                                  bbox_inches='tight')
+
             reference = self.reference_line.text()
         except:
             pass
@@ -845,7 +879,23 @@ class MyApp(QWidget):
             
             cursor = entire_text.textCursor()
             entire_text.moveCursor(QTextCursor.End)
+
+#            img = Image.open('mass_fig.png')
+#            img_re = img.resize((int(img.width/2.5), int(img.height/2.5)), Image.ANTIALIAS)
+#            img_re.save('mass_fig2.png')
+
+
             cursor.insertImage('mass_fig.png')
+#            print()
+
+            #ADDED
+          #  cursor = entire_text.textCursor()
+           # entire_text.moveCursor(QTextCursor.End)
+            #cursor.insertImage('msinfo.png')
+            ########################################### meta added
+            entire_text.append(meta_all)
+
+
         except:
             pass
         
