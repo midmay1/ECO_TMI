@@ -60,6 +60,7 @@ class MyApp(QWidget):
 #       right_grid.setRowStretch(1,0.1)
 #       self.setGeometry(300,300,500,500)
 #       self.resize(1100,1100)
+
         self.setWindowTitle('TOXMASS 1.0')
         self.setLayout(grid)
         self.center()
@@ -153,33 +154,21 @@ class MyApp(QWidget):
         self.info_table.verticalHeader().setStyleSheet('gridline-color : gray')
         self.info_table.setEditTriggers(QTableWidget.NoEditTriggers)
 
-#        self.info_table.setHorizontalScrollMode(QAbstractItemView_ScrollMode=ScrollPerPixel')
-
-#        self.info_table.scrollToItem()
-#        self.info_table.horizontalScrollBar()
-
-#        self.info_table.hasAutoScroll()
-
-
+#       self.info_table.setHorizontalScrollMode(QAbstractItemView_ScrollMode=ScrollPerPixel')
+#       self.info_table.scrollToItem()
+#       self.info_table.horizontalScrollBar()
+#       self.info_table.hasAutoScroll()
+#       vbox = QVBoxLayout()
+#       scroll = QScrollArea()
+#       scroll.setWidget(self.info_table)
+#       vbox.addWidget(scroll)
 
         vbox = QVBoxLayout()
-
-#        scroll = QScrollArea()
-#        scroll.setWidget(self.info_table)
-#        vbox.addWidget(scroll)
-
-
-
         vbox.addWidget(self.info_table)
-
         groupbox.setLayout(vbox)
 
-
-#        scrollarea = QScrollArea(vbox)
-
-
-
-#        self.info_table.setColumnWidth(0,groupbox.width()*2)
+#       scrollarea = QScrollArea(vbox)
+#       self.info_table.setColumnWidth(0,groupbox.width()*2)
 
         # Regulatinig table
         self.info_table.setRowHeight(0,groupbox.height()/16)
@@ -187,7 +176,7 @@ class MyApp(QWidget):
         self.info_table.setRowHeight(2,groupbox.height()/16)
         self.info_table.setRowHeight(3,groupbox.height()/16)
         QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
-#        QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
+#       QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
         QTableWidget.setFixedHeight(self.info_table, groupbox.height()*4/10)
         vbox.addStretch(0.001)
 
@@ -257,7 +246,7 @@ class MyApp(QWidget):
 
         # Mass spectrum figure
         self.mass_fig = plt.Figure(figsize=(50,50))
-#        self.mass_fig = plt.Figure()
+#       self.mass_fig = plt.Figure()
         self.mass_canvas = FigureCanvas(self.mass_fig)
         
         self.mass_fig.clear()
@@ -439,11 +428,9 @@ class MyApp(QWidget):
         self.info_table.setItem(3, 0, QTableWidgetItem(smiles))
         self.info_table.resizeColumnsToContents()
 
-#        self.info_table.scrollToItem()
-
-#        self.info_table.setHorizontalScrollMode('mode : ScrollMode')
-
-#        self.info_table.horizontalScrollBar().setValue(0)
+#       self.info_table.scrollToItem()
+#       self.info_table.setHorizontalScrollMode('mode : ScrollMode')
+#       self.info_table.horizontalScrollBar().setValue(0)
         
         ### related to poison grid ###
         if not self.species_all.isChecked() \
@@ -779,7 +766,7 @@ class MyApp(QWidget):
 
             self.reference_line.setText('')
 
-            #           self.mass_canvas = FigureCanvas(self.mass_fig)
+#           self.mass_canvas = FigureCanvas(self.mass_fig)
 #           self.mass_canvas.draw()
             self.mass_layout.addWidget(self.mass_canvas)
             self.mass_layout.addWidget(self.reference_line)
@@ -846,8 +833,6 @@ class MyApp(QWidget):
             fig.set_size_inches(12.5, 7.0)
             fig.savefig('mass_fig.png', dpi=100)
 
-
-
 #            self.mass_fig.savefig('mass_fig.png',
 #                                  dpi=100,
 #                                  papertype='a4')
@@ -880,19 +865,12 @@ class MyApp(QWidget):
             cursor = entire_text.textCursor()
             entire_text.moveCursor(QTextCursor.End)
 
-#            img = Image.open('mass_fig.png')
-#            img_re = img.resize((int(img.width/2.5), int(img.height/2.5)), Image.ANTIALIAS)
-#            img_re.save('mass_fig2.png')
-
+#           img = Image.open('mass_fig.png')
+#           img_re = img.resize((int(img.width/2.5), int(img.height/2.5)), Image.ANTIALIAS)
+#           img_re.save('mass_fig2.png')
 
             cursor.insertImage('mass_fig.png')
-#            print()
 
-            #ADDED
-          #  cursor = entire_text.textCursor()
-           # entire_text.moveCursor(QTextCursor.End)
-            #cursor.insertImage('msinfo.png')
-            ########################################### meta added
             entire_text.append(meta_all)
 
 
