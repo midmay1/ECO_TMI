@@ -35,7 +35,8 @@ db_pkl = "df.pkl"
 
 def load_db():
     try :
-        with open( "df.pkl", "rb" ) as file:
+        pickle_file = os.path.join(db_folder, db_pkl)
+        with open(pickle_file, "rb") as file:
             df = pickle.load(file)
         print("READING PICKLE file!")
 
@@ -63,7 +64,7 @@ def load_db():
             if cid == 525: print( cas, iupac_name, smiles )
 
         # Save data frame to pickle
-        df.to_pickle("df.pkl")
+        df.to_pickle(pickle_file)
    
     msms_data_path = os.path.join(db_folder, json_file_name)
     #print(datetime.datetime.now())
