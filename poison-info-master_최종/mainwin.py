@@ -1,8 +1,9 @@
 from functools import partial
 
 import run
+import sys
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QMessageBox, QApplication
 
 
 class MyMain(QMainWindow):
@@ -49,17 +50,16 @@ class MyMain(QMainWindow):
         aboutmenu.addAction(aboutAction)
 
         ### Set the tool bar ####
-#        self.toolbar = self.addToolBar('Exit')
-#        self.toolbar.addAction(exitAction)
-#        self.toolbar = self.addToolBar('Save')
-#        self.toolbar.addAction(saveAction)
-#        self.toolbar = self.addToolBar('Print')
-#        self.toolbar.addAction(printAction)
+#       self.toolbar = self.addToolBar('Exit')
+#       self.toolbar.addAction(exitAction)
+#       self.toolbar = self.addToolBar('Save')
+#       self.toolbar.addAction(saveAction)
+#       self.toolbar = self.addToolBar('Print')
+#       self.toolbar.addAction(printAction)
 
-#        self.setWindowTitle('Toxicity-Mass Database')
-        self.setGeometry(300, 300, 500, 500)
-#        self.setMinimumSize(self,1100, 697.5)
-        self.resize(2100,1100)
+#       self.setWindowTitle('Toxicity-Mass Database')
+        self.setGeometry(300, 300, 1200, 500)
+#        self.resize(2100,1100)
 
 
         self.setWindowTitle('TOXMASS 1.0')
@@ -69,3 +69,10 @@ class MyMain(QMainWindow):
     def aboutdialog(self):
         aboutmsg = "This is a software with both toxicity database and MS spectrum database. \n\nThe toxicity DB is obtained from PubChem.\n\nThe current version is 1.0\n"
         QMessageBox.information(self, "QMessageBox.information()", aboutmsg)
+
+#################  To run this software without toxmass.py #############
+#if __name__ == '__main__':
+#    app=QApplication(sys.argv)
+#    ex = MyMain()
+#    sys.exit(app.exec_())
+##########################################################################

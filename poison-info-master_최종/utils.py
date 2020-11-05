@@ -14,23 +14,10 @@ print(datetime.datetime.now())
 
 db_folder = './database_sample/'
 
-#1 Database sample
+#1 MS Database for version 1.0
 json_file_name = 'MS_all.json'
 
-#2 Database 2
-#json_file_name = 'bioactive-dude-17499-new-16930.json'
-#json_file_name = 'drug-fda_drugbank-1515-new-1421.json'
-#json_file_name = 'drug-keggdrug-3682-new-3459.json'
-#json_file_name = 'natural-nubbe-1008-new-1007.json'  # error
-#json_file_name = 'natural-unpd-81372-new-79553.json'
-#json_file_name = 'orientalmed-dbtaiwan-5883-new-5762.json'
-#json_file_name = 'toxicmol-t3db-1283-new-1212.json'
-#json_file_name = 'toxicmol-toxnet_hsdb-3035-new-2816.json'
-
-#3 Database Final
-#json_file_name = 'SMILES_MS_v2.json'
-
-#4 Pickle file name
+#2 Pickle file name
 db_pkl = "df.pkl"
 
 def load_db():
@@ -61,7 +48,7 @@ def load_db():
             smiles = [d.split('  ')[1] for d in smiles][0]
             df.loc[i] = [cid, cas, iupac_name, smiles]
 
-            if cid == 525: print( cas, iupac_name, smiles )
+            #if cid == 525: print( cas, iupac_name, smiles )
 
         # Save data frame to pickle
         df.to_pickle(pickle_file)
@@ -73,9 +60,9 @@ def load_db():
         #print("json file loaded")
         #print(datetime.datetime.now())
 
-    print( df.index )
-    print( df.columns )
-    print( df.head() )
+    #print( df.index )
+    #print( df.columns )
+    #print( df.head() )
 
 
     return df, msms_data
@@ -173,11 +160,5 @@ def plot_mass(ax, mz_array, intensity_array):
     ax.tick_params(axis='x', labelsize=15)
     ax.tick_params(axis='y', labelsize=15)
 
-#    plt.rcParams["figure.figsize"] = (4.8,3.6)
-
-#    ax.set_xticklabels('m/z', fontsize=12)
-    
     plt.tight_layout()
-#    plt.xticks(fontsize=20)
-    
     return ax

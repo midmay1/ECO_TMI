@@ -5,15 +5,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import utils
 from PyQt5.Qt import QFileInfo
-from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QTextCursor, QIcon
 from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
 from PyQt5.QtWidgets import (QWidget, QDesktopWidget, QGroupBox, QGridLayout, QVBoxLayout, QHBoxLayout,
-                             QLineEdit, QTextEdit, QPushButton, QScrollArea,
+                             QLineEdit, QTextEdit, QPushButton, QAction, qApp, QMainWindow,
                              QTableWidget, QTableWidgetItem, QCheckBox, QComboBox, QMessageBox,
                              QFileDialog)
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from PIL import Image
 
+#######################################################################################
 class MyApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -26,6 +27,7 @@ class MyApp(QWidget):
         
     ### 2. UI initialization ###
     def initUI(self):
+
         # The whole grid = left + right
         grid = QGridLayout()
 
@@ -60,7 +62,6 @@ class MyApp(QWidget):
 #       right_grid.setRowStretch(1,0.1)
 #       self.setGeometry(300,300,500,500)
 #       self.resize(1100,1100)
-
         self.setWindowTitle('TOXMASS 1.0')
         self.setLayout(grid)
         self.center()
@@ -177,8 +178,8 @@ class MyApp(QWidget):
         self.info_table.setRowHeight(3,groupbox.height()/16)
         QTableWidget.setMinimumSize(self.info_table, self.info_table.width()/2,self.info_table.height()/4)
 #       QTableWidget.setFixedSize(self.info_table, groupbox.width(), groupbox.height()*4/10)
-        QTableWidget.setFixedHeight(self.info_table, groupbox.height()*4/10)
-        vbox.addStretch(0.001)
+#        QTableWidget.setFixedHeight(self.info_table, groupbox.height()*4/10)
+        vbox.addStretch(1)
 
 
 
@@ -370,7 +371,7 @@ class MyApp(QWidget):
 
                 # if there are more than one results , print first "True" cid number 
                 searched_result=np.array(searched_result)
-                print(searched_result)
+                #print(searched_result)
                 if len(np.where(searched_result==True)[0])!= 1:
                     print("Searche results > 1")
                     #searched_cid = df.values[np.where(searched_result==True)[0][1]][0]
@@ -512,7 +513,7 @@ class MyApp(QWidget):
                                                                                'daphnia' not in p.lower()]
         
         filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  '+ f for f in filtered_poison_list]
-        poison_text = '<p style="font-size: 15px"><b>Ecotoxicity data form pubchem</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
+        poison_text = '<p style="font-size: 40px"><b>Ecotoxicity data form pubchem</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
 
         ##########################set poison text module end###################################
 
@@ -600,7 +601,7 @@ class MyApp(QWidget):
                                          'daphnia' not in p.lower()]
 
         filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  '+ f for f in filtered_poison_list]
-        poison_text = poison_text+ '<br><br>'+ '<p style="font-size: 15px"><b>Ecotoxicity data of 생활화학제품 from various DBs</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
+        poison_text = poison_text+ '<br><br>'+ '<p style="font-size: 40px"><b>Ecotoxicity data of 생활화학제품 from various DBs</b></p>' + '<br>' + '<br><br>'.join(filtered_poison_list)
 
         ##########################set poison text module end###################################
 
@@ -688,7 +689,7 @@ class MyApp(QWidget):
                                          'daphnia' not in p.lower()]
 
         filtered_poison_list = ['&nbsp; &nbsp; &nbsp; &nbsp;     ▶︎  ' + f for f in filtered_poison_list]
-        poison_text = poison_text + '<br><br>' + '<p style="font-size: 15px"><b>Ecotoxicity data from experiments 안전성평가연구소 </b></p>' + '<br>' + '<br><br>'.join(
+        poison_text = poison_text + '<br><br>' + '<p style="font-size: 40px"><b>Ecotoxicity data from experiments 안전성평가연구소 </b></p>' + '<br>' + '<br><br>'.join(
             filtered_poison_list)
 
         ##########################set poison text module end###################################
@@ -723,17 +724,17 @@ class MyApp(QWidget):
                 self.msinfo_table.setItem(idx_ms,0,QTableWidgetItem(str(ms_dict['value'])))
                 meta_v.append(ms_dict['value'])
                 idx_ms +=1
-            meta=str()
-            meta_all=str()
+            #meta=str()
+            #meta_all=str()
             meta_all="[MS spectrum metadata]\n\n"
 
             for i in range (0,len(meta_n)):
                 meta="►{} \n  :       {}".format(meta_n[i],meta_v[i])
                 meta_all+='{}\n'.format(meta)
-            print(meta_all)
+            #print(meta_all)
             self.meta_all.setText(meta_all)
-            print("up", meta_n)
-            print("up", meta_v)
+            #print("up", meta_n)
+            #print("up", meta_v)
 
 
             self.msinfo_table.setVerticalHeaderLabels(self.header_list)
